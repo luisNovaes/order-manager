@@ -37,7 +37,7 @@ public class ItemController {
 			if (item == null)
 				itemRepository.findAll().forEach(Items::add);
 			else
-				itemRepository.findByNomeContaining(item).forEach(Items::add);
+				itemRepository.findByNameContaining(item).forEach(Items::add);
 
 			if (Items.isEmpty()) {
 				return new ResponseEntity<>(HttpStatus.NO_CONTENT);

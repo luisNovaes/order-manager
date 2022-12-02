@@ -6,5 +6,5 @@ import com.order.model.Item;
 
 public interface ItemRepository extends JpaRepository<Item, Long> {
 	
-	Iterable<Item> findByNomeContaining(String item);
+	Iterable<Item> findByNameContaining(String item);
 }
