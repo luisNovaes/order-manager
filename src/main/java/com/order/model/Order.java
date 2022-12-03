@@ -25,7 +25,7 @@ public class Order {
 	private Item item;
 	
 	@Column(name = "quantity")
-	private String quantity;
+	private Long quantity;
 	
 	
 	@OneToOne(targetEntity=User.class)  
@@ -35,18 +35,13 @@ public class Order {
 	
 	}
 
-
-
-	public Order(Date creationDate, Item item, String quantity, User user) {
+	public Order(Date creationDate, Item item, Long quantity, User user) {
+		super();
 		this.creationDate = creationDate;
 		this.item = item;
 		this.quantity = quantity;
 		this.user = user;
 	}
-
-
-
-
 
 
 	public long getId() {
@@ -72,20 +67,19 @@ public class Order {
 	}
 
 
+	public Long getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(Long quantity) {
+		this.quantity = quantity;
+	}
 
 	public void setItem(Item item) {
 		this.item = item;
 	}
 
 
-
-	public String getQuantity() {
-		return quantity;
-	}
-
-	public void setQuantity(String quantity) {
-		this.quantity = quantity;
-	}
 
 	public User getUser() {
 		return user;

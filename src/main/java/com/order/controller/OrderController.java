@@ -27,6 +27,8 @@ import com.order.repository.OrderRepository;
 import com.order.repository.UserRepository;
 import com.order.request.Request;
 import com.order.request.RequestOrder;
+import com.order.service.ServiceOrder;
+import com.order.service.dto.ControllerDto;
 
 @CrossOrigin(origins = "http://localhost:8081")
 @RestController
@@ -39,6 +41,9 @@ public class OrderController {
 	UserRepository userRepository;
 	@Autowired
 	ItemRepository itemRepository;
+	
+	@Autowired
+	ServiceOrder service;
 
 	@GetMapping("/orders")
 	public ResponseEntity<List<Order>> getAllOrders(@RequestParam(required = false) String order) {
@@ -75,13 +80,10 @@ public class OrderController {
 	public ResponseEntity<Order> createOrder(@RequestBody Request request) {
 		
 		try {
-			
-			Item item = itemRepository.findByName(request.getItem());
-				
-			User user = userRepository.findByName(request.getUser());
+			 ControllerDto orderDto = service.buildOrder(request);
 	
 			Order _order = orderRepository
-					.save(new Order(new Date(), item, request.getQuantity(), user));
+					.save(new Order(new Date(), orderDto.getItem(), request.getQuantity(), orderDto.getUser()));
 			
 			return new ResponseEntity<>(_order, HttpStatus.CREATED);
 			

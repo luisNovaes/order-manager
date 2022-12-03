@@ -26,13 +26,13 @@ public class StockMovement {
 	private Item item;
 	
 	@Column(name = "quantity")
-	private String quantity;
+	private Long quantity;
 	
 	public StockMovement() {
 	}
 
-	
-	public StockMovement(Date creationDate, Item item, String quantity) {
+
+	public StockMovement(Date creationDate, Item item, Long quantity) {
 		super();
 		this.creationDate = creationDate;
 		this.item = item;
@@ -67,11 +67,11 @@ public class StockMovement {
 	}
 
 
-	public String getQuantity() {
+	public Long getQuantity() {
 		return quantity;
 	}
 
-	public void setQuantity(String quantity) {
+	public void setQuantity(Long quantity) {
 		this.quantity = quantity;
 	}
 	
