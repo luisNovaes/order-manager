@@ -78,12 +78,16 @@ public class OrderController {
 
 	@PostMapping("/order")
 	public ResponseEntity<Order> createOrder(@RequestBody Request request) {
-		
+		Order orderEmpty = new Order();
 		try {
 			 ControllerDto orderDto = service.buildOrder(request);
+			 
+			 if (orderDto == null) {
+				 return new ResponseEntity<>(orderEmpty, HttpStatus.BAD_REQUEST);
+			}
 	
 			Order _order = orderRepository
-					.save(new Order(new Date(), orderDto.getItem(), request.getQuantity(), orderDto.getUser()));
+					.save(new Order(new Date(), orderDto.getItem(), orderDto.getQuantity(), orderDto.getUser()));
 			
 			return new ResponseEntity<>(_order, HttpStatus.CREATED);
 			
