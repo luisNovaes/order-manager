@@ -21,9 +21,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.order.model.Item;
 import com.order.model.Order;
+import com.order.model.RegisterStockMovement;
+import com.order.model.SituatioEnum;
 import com.order.model.User;
 import com.order.repository.ItemRepository;
 import com.order.repository.OrderRepository;
+import com.order.repository.RegistroMovementRepository;
 import com.order.repository.UserRepository;
 import com.order.request.Request;
 import com.order.request.RequestOrder;
@@ -41,6 +44,8 @@ public class OrderController {
 	UserRepository userRepository;
 	@Autowired
 	ItemRepository itemRepository;
+	@Autowired
+	RegistroMovementRepository registroMovementRepository;
 	
 	@Autowired
 	ServiceOrder service;
@@ -83,11 +88,14 @@ public class OrderController {
 			 ControllerDto orderDto = service.buildOrder(request);
 			 
 			 if (orderDto == null) {
+				 registroMovementRepository.save(new RegisterStockMovement(new Date(), null, null, SituatioEnum.ENDED_ERROR.toString()));
 				 return new ResponseEntity<>(orderEmpty, HttpStatus.BAD_REQUEST);
 			}
 	
 			Order _order = orderRepository
 					.save(new Order(new Date(), orderDto.getItem(), orderDto.getQuantity(), orderDto.getUser()));
+			
+			registroMovementRepository.save(new RegisterStockMovement(new Date(), null, _order, SituatioEnum.SUCCESS_COMPLETED.toString()));
 			
 			return new ResponseEntity<>(_order, HttpStatus.CREATED);
 			
