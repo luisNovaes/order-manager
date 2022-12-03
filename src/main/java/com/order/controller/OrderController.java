@@ -79,10 +79,9 @@ public class OrderController {
 			Item item = itemRepository.findByName(request.getItem());
 				
 			User user = userRepository.findByName(request.getUser());
-			
-			Date getCreationDate = new Date();
+	
 			Order _order = orderRepository
-					.save(new Order(getCreationDate, item, request.getQuantity(), user));
+					.save(new Order(new Date(), item, request.getQuantity(), user));
 			
 			return new ResponseEntity<>(_order, HttpStatus.CREATED);
 			

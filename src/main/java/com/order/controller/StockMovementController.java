@@ -19,8 +19,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.order.model.Item;
 import com.order.model.StockMovement;
+import com.order.model.User;
+import com.order.repository.ItemRepository;
 import com.order.repository.StockMovementRepository;
+import com.order.repository.UserRepository;
+import com.order.request.Request;
 
 @CrossOrigin(origins = "http://localhost:8081")
 @RestController
@@ -29,6 +34,10 @@ public class StockMovementController {
 	
 	@Autowired
 	StockMovementRepository stockMovementRepository;
+	@Autowired
+	UserRepository userRepository;
+	@Autowired
+	ItemRepository itemRepository;
 
 	@GetMapping("/stockMovements")
 	public ResponseEntity<List<StockMovement>> getAllStockMovements(@RequestParam(required = false) String stockMovement) {
@@ -50,7 +59,7 @@ public class StockMovementController {
 		}
 	}
 
-	@GetMapping("/stockMovements/{id}")
+	@GetMapping("/stockMovement/{id}")
 	public ResponseEntity<StockMovement> getStockMovementById(@PathVariable("id") long id) {
 		Optional<StockMovement> StockMovementData = stockMovementRepository.findById(id);
 
@@ -61,15 +70,14 @@ public class StockMovementController {
 		}
 	}
 
-	@PostMapping("/stockMovements")
-	public ResponseEntity<StockMovement> createStockMovement(@RequestBody StockMovement stockMovement) {
+	@PostMapping("/stockMovement")
+	public ResponseEntity<StockMovement> createStockMovement(@RequestBody Request request) {
 		
 		try {
-			StockMovement _stockMovement = null;
-			_stockMovement = stockMovementRepository
-						.save(new StockMovement(stockMovement.getCreationDate(), 
-												stockMovement.getItem(),
-												stockMovement.getQuantity()));
+			Item item = itemRepository.findByName(request.getItem());
+			
+			StockMovement _stockMovement  = stockMovementRepository
+						.save(new StockMovement(new Date(), item, request.getQuantity()));
 			
 			return new ResponseEntity<>(_stockMovement, HttpStatus.CREATED);
 			
@@ -78,15 +86,20 @@ public class StockMovementController {
 		}
 	}
 
-	@PutMapping("/stockMovements/{id}")
-	public ResponseEntity<StockMovement> updateStockMovement(@PathVariable("id") long id, @RequestBody StockMovement stockMovement ) {
+	@PutMapping("/stockMovement/{id}")
+	public ResponseEntity<StockMovement> updateStockMovement(@PathVariable("id") long id, @RequestBody Request request ) {
 		Optional<StockMovement> StockMovementData = stockMovementRepository.findById(id);
+		
+		Item item = itemRepository.findByName(request.getItem());
 
 		if (StockMovementData.isPresent()) {
+			
 			StockMovement _stockMovement = StockMovementData.get();
-			_stockMovement.setCreationDate(stockMovement.getCreationDate()); 
-			_stockMovement.setItem(stockMovement.getItem());
-			_stockMovement.setQuantity(stockMovement.getQuantity());			
+			
+			_stockMovement.setCreationDate(new Date()); 
+			_stockMovement.setItem(item);
+			_stockMovement.setQuantity(request.getQuantity());		
+			
 			return new ResponseEntity<>(stockMovementRepository.save(_stockMovement), HttpStatus.OK);
 			
 		} else {
@@ -94,7 +107,7 @@ public class StockMovementController {
 		}
 	}
 
-	@DeleteMapping("/stockMovements/{id}")
+	@DeleteMapping("/stockMovement/{id}")
 	public ResponseEntity<HttpStatus> deleteStockMovement(@PathVariable("id") long id) {
 		try {
 			stockMovementRepository.deleteById(id);
@@ -104,7 +117,7 @@ public class StockMovementController {
 		}
 	}
 
-	@DeleteMapping("/stockMovements")
+	@DeleteMapping("/stockMovement")
 	public ResponseEntity<HttpStatus> deleteAllStockMovements() {
 		try {
 			stockMovementRepository.deleteAll();
