@@ -49,7 +49,7 @@ public class ItemController {
 		}
 	}
 
-	@GetMapping("/items/{id}")
+	@GetMapping("/item/{id}")
 	public ResponseEntity<Item> getItemById(@PathVariable("id") long id) {
 		Optional<Item> ItemData = itemRepository.findById(id);
 
@@ -60,7 +60,7 @@ public class ItemController {
 		}
 	}
 
-	@PostMapping("/items")
+	@PostMapping("/item")
 	public ResponseEntity<Item> createItem(@RequestBody Item item) {
 		try {
 			Item _Item = itemRepository
@@ -71,7 +71,7 @@ public class ItemController {
 		}
 	}
 
-	@PutMapping("/items/{id}")
+	@PutMapping("/item/{id}")
 	public ResponseEntity<Item> updateItem(@PathVariable("id") long id, @RequestBody Item item) {
 		Optional<Item> itemData = itemRepository.findById(id);
 
@@ -84,7 +84,7 @@ public class ItemController {
 		}
 	}
 
-	@DeleteMapping("/items/{id}")
+	@DeleteMapping("/item/{id}")
 	public ResponseEntity<HttpStatus> deleteItem(@PathVariable("id") long id) {
 		try {
 			itemRepository.deleteById(id);

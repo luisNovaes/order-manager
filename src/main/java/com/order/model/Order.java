@@ -1,19 +1,13 @@
 package com.order.model;
 
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
-import jakarta.persistence.PrimaryKeyJoinColumn;
 import jakarta.persistence.Table;
 
 @Entity
@@ -21,33 +15,39 @@ import jakarta.persistence.Table;
 public class Order {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
 	@Column(name = "creationDate")
 	private Date creationDate;
 	
-	@OneToMany(targetEntity=Item.class)  
-	private List items;
+	@OneToOne(targetEntity=Item.class)  
+	private Item item;
 	
 	@Column(name = "quantity")
 	private String quantity;
 	
 	
-	@OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "user_id")
+	@OneToOne(targetEntity=User.class)  
 	private User user;
 
 	public Order() {
 	
 	}
 
-	public Order(Date creationDate, List<Item> item, String quantity, User user) {
+
+
+	public Order(Date creationDate, Item item, String quantity, User user) {
 		this.creationDate = creationDate;
-		this.items = item;
+		this.item = item;
 		this.quantity = quantity;
 		this.user = user;
 	}
+
+
+
+
+
 
 	public long getId() {
 		return id;
@@ -65,13 +65,19 @@ public class Order {
 		this.creationDate = creationDate;
 	}
 
-	public List<Item> getItem() {
-		return items;
+
+
+	public Item getItem() {
+		return item;
 	}
 
-	public void setItem(List<Item> item) {
-		this.items = item;
+
+
+	public void setItem(Item item) {
+		this.item = item;
 	}
+
+
 
 	public String getQuantity() {
 		return quantity;

@@ -26,6 +26,7 @@ import com.order.repository.ItemRepository;
 import com.order.repository.OrderRepository;
 import com.order.repository.UserRepository;
 import com.order.request.Request;
+import com.order.request.RequestOrder;
 
 @CrossOrigin(origins = "http://localhost:8081")
 @RestController
@@ -59,7 +60,7 @@ public class OrderController {
 		}
 	}
 
-	@GetMapping("/orders/{id}")
+	@GetMapping("/order/{id}")
 	public ResponseEntity<Order> getOrderById(@PathVariable("id") long id) {
 		Optional<Order> OrderData = orderRepository.findById(id);
 
@@ -70,22 +71,18 @@ public class OrderController {
 		}
 	}
 
-	@PostMapping("/orders")
+	@PostMapping("/order")
 	public ResponseEntity<Order> createOrder(@RequestBody Request request) {
 		
-		List<Item> items = new ArrayList<Item>();
-		
 		try {
-			for (String itemList : request.getItem()) {
-				Item item = itemRepository.findByName(itemList);
-				items.add(item);
-			}
 			
+			Item item = itemRepository.findByName(request.getItem());
+				
 			User user = userRepository.findByName(request.getUser());
 			
 			Date getCreationDate = new Date();
 			Order _order = orderRepository
-					.save(new Order(getCreationDate, items, request.getQuantity(), user));
+					.save(new Order(getCreationDate, item, request.getQuantity(), user));
 			
 			return new ResponseEntity<>(_order, HttpStatus.CREATED);
 			
@@ -95,23 +92,27 @@ public class OrderController {
 		}
 	}
 
-	@PutMapping("/orders/{id}")
-	public ResponseEntity<Order> updateOrder(@PathVariable("id") long id, @RequestBody Order order) {
+	@PutMapping("/order/{id}")
+	public ResponseEntity<Order> updateOrder(@PathVariable("id") long id, @RequestBody RequestOrder requestOrder) {
 		Optional<Order> OrderData = orderRepository.findById(id);
+		
+		Item item = itemRepository.findByName(requestOrder.getItem());
+		
+		User user = userRepository.findByName(requestOrder.getUser());
 
 		if (OrderData.isPresent()) {
 			Order _order = OrderData.get();
-			_order.setUser(order.getUser());
-			_order.setCreationDate(order.getCreationDate());
-			_order.setItem(order.getItem());
-			_order.setQuantity(order.getQuantity());
+			_order.setUser(user);
+			_order.setCreationDate(new Date());
+			_order.setItem(item);
+			_order.setQuantity(requestOrder.getQuantity());
 			return new ResponseEntity<>(orderRepository.save(_order), HttpStatus.OK);
 		} else {
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
 	}
 
-	@DeleteMapping("/orders/{id}")
+	@DeleteMapping("/order/{id}")
 	public ResponseEntity<HttpStatus> deleteOrder(@PathVariable("id") long id) {
 		try {
 			orderRepository.deleteById(id);
@@ -121,7 +122,7 @@ public class OrderController {
 		}
 	}
 
-	@DeleteMapping("/orders")
+	@DeleteMapping("/order")
 	public ResponseEntity<HttpStatus> deleteAllOrders() {
 		try {
 			orderRepository.deleteAll();

@@ -49,7 +49,7 @@ public class UserController {
 		}
 	}
 
-	@GetMapping("/users/{id}")
+	@GetMapping("/user/{id}")
 	public ResponseEntity<User> getUserById(@PathVariable("id") long id) {
 		Optional<User> userData = userRepository.findById(id);
 
@@ -60,7 +60,7 @@ public class UserController {
 		}
 	}
 
-	@PostMapping("/users")
+	@PostMapping("/user")
 	public ResponseEntity<User> createUser(@RequestBody User user) {
 		try {
 			User _user = userRepository
@@ -71,7 +71,7 @@ public class UserController {
 		}
 	}
 
-	@PutMapping("/users/{id}")
+	@PutMapping("/user/{id}")
 	public ResponseEntity<User> updateUser(@PathVariable("id") long id, @RequestBody User user) {
 		Optional<User> userData = userRepository.findById(id);
 
@@ -85,7 +85,7 @@ public class UserController {
 		}
 	}
 
-	@DeleteMapping("/users/{id}")
+	@DeleteMapping("/user/{id}")
 	public ResponseEntity<HttpStatus> deleteUser(@PathVariable("id") long id) {
 		try {
 			userRepository.deleteById(id);
@@ -95,7 +95,7 @@ public class UserController {
 		}
 	}
 
-	@DeleteMapping("/users")
+	@DeleteMapping("/user")
 	public ResponseEntity<HttpStatus> deleteAllUsers() {
 		try {
 			userRepository.deleteAll();

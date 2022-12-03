@@ -1,6 +1,5 @@
 package com.order.model;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -10,20 +9,21 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "stockMovements")
 public class StockMovement {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 
 	@Column(name = "creationDate")
 	private Date creationDate;
 	
-	@OneToMany(targetEntity=Item.class)  
-	private List items;
+	@OneToOne(targetEntity=Item.class)  
+	private Item item;
 	
 	@Column(name = "quantity")
 	private String quantity;
@@ -31,11 +31,14 @@ public class StockMovement {
 	public StockMovement() {
 	}
 
-	public StockMovement(Date creationDate, List<Item> items, String quantity) {
+	
+	public StockMovement(Date creationDate, Item item, String quantity) {
+		super();
 		this.creationDate = creationDate;
-		this.items = items;
+		this.item = item;
 		this.quantity = quantity;
 	}
+
 
 	public long getId() {
 		return id;
@@ -53,15 +56,16 @@ public class StockMovement {
 		this.creationDate = creationDate;
 	}
 
-	
 
-	public List<Item> getItems() {
-		return items;
+	public Item getItem() {
+		return item;
 	}
 
-	public void setItems(List<Item> items) {
-		this.items = items;
+
+	public void setItem(Item item) {
+		this.item = item;
 	}
+
 
 	public String getQuantity() {
 		return quantity;

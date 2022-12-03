@@ -8,6 +8,6 @@ import com.order.model.StockMovement;
 
 public interface StockMovementRepository extends JpaRepository<StockMovement, Long>{
 	
-	List<StockMovement> findByItemsContaining(String item);
+	List<StockMovement> findByItemContaining(String item);
 
 }
