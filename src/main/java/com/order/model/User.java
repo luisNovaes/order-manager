@@ -1,10 +1,13 @@
 package com.order.model;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -20,6 +23,13 @@ public class User {
 	
 	@Column(name = "email")
 	private String email;
+	
+	@OneToOne
+	@JoinColumn(name = "fk_order")
+	private Order order;
+	
+	@OneToOne(mappedBy = "user")
+    private Order userOrder;
 
 	public User() {
 	}

@@ -19,8 +19,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.order.model.Item;
 import com.order.model.Order;
+import com.order.model.User;
+import com.order.repository.ItemRepository;
 import com.order.repository.OrderRepository;
+import com.order.repository.UserRepository;
+import com.order.request.Request;
 
 @CrossOrigin(origins = "http://localhost:8081")
 @RestController
@@ -29,6 +34,10 @@ public class OrderController {
 	
 	@Autowired
 	OrderRepository orderRepository;
+	@Autowired
+	UserRepository userRepository;
+	@Autowired
+	ItemRepository itemRepository;
 
 	@GetMapping("/orders")
 	public ResponseEntity<List<Order>> getAllOrders(@RequestParam(required = false) String order) {
@@ -62,12 +71,26 @@ public class OrderController {
 	}
 
 	@PostMapping("/orders")
-	public ResponseEntity<Order> createOrder(@RequestBody Order order) {
+	public ResponseEntity<Order> createOrder(@RequestBody Request request) {
+		
+		List<Item> items = new ArrayList<Item>();
+		
 		try {
-			Order _Order = orderRepository
-					.save(new Order(order.getCreationDate(), order.getItem(), order.getQuantity(), order.getUser()));
-			return new ResponseEntity<>(_Order, HttpStatus.CREATED);
+			for (String itemList : request.getItem()) {
+				Item item = itemRepository.findByName(itemList);
+				items.add(item);
+			}
+			
+			User user = userRepository.findByName(request.getUser());
+			
+			Date getCreationDate = new Date();
+			Order _order = orderRepository
+					.save(new Order(getCreationDate, items, request.getQuantity(), user));
+			
+			return new ResponseEntity<>(_order, HttpStatus.CREATED);
+			
 		} catch (Exception e) {
+			System.out.println(e);
 			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}

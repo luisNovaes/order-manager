@@ -1,5 +1,6 @@
 package com.order.model;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -21,9 +22,8 @@ public class StockMovement {
 	@Column(name = "creationDate")
 	private Date creationDate;
 	
-	@Column(name = "item")
-	@OneToMany( targetEntity=Item.class )
-	private List<Item> item;
+	@OneToMany(targetEntity=Item.class)  
+	private List items;
 	
 	@Column(name = "quantity")
 	private String quantity;
@@ -31,9 +31,9 @@ public class StockMovement {
 	public StockMovement() {
 	}
 
-	public StockMovement(Date creationDate, List<Item> item, String quantity) {
+	public StockMovement(Date creationDate, List<Item> items, String quantity) {
 		this.creationDate = creationDate;
-		this.item = item;
+		this.items = items;
 		this.quantity = quantity;
 	}
 
@@ -53,12 +53,14 @@ public class StockMovement {
 		this.creationDate = creationDate;
 	}
 
-	public List<Item> getItem() {
-		return item;
+	
+
+	public List<Item> getItems() {
+		return items;
 	}
 
-	public void setItem(List<Item> item) {
-		this.item = item;
+	public void setItems(List<Item> items) {
+		this.items = items;
 	}
 
 	public String getQuantity() {

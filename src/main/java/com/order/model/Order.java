@@ -1,13 +1,16 @@
 package com.order.model;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.PrimaryKeyJoinColumn;
@@ -24,15 +27,15 @@ public class Order {
 	@Column(name = "creationDate")
 	private Date creationDate;
 	
-	@Column(name = "item")
-	@OneToMany( targetEntity=Item.class )
-	private List<Item> item;
+	@OneToMany(targetEntity=Item.class)  
+	private List items;
 	
 	@Column(name = "quantity")
 	private String quantity;
 	
-	@PrimaryKeyJoinColumn(name = "user")
-	@OneToOne
+	
+	@OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "user_id")
 	private User user;
 
 	public Order() {
@@ -41,7 +44,7 @@ public class Order {
 
 	public Order(Date creationDate, List<Item> item, String quantity, User user) {
 		this.creationDate = creationDate;
-		this.item = item;
+		this.items = item;
 		this.quantity = quantity;
 		this.user = user;
 	}
@@ -63,11 +66,11 @@ public class Order {
 	}
 
 	public List<Item> getItem() {
-		return item;
+		return items;
 	}
 
 	public void setItem(List<Item> item) {
-		this.item = item;
+		this.items = item;
 	}
 
 	public String getQuantity() {

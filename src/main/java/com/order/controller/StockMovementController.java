@@ -38,7 +38,7 @@ public class StockMovementController {
 			if (stockMovement == null)
 				stockMovementRepository.findAll().forEach(stockMovements::add);
 			else
-				stockMovementRepository.findByItemContaining(stockMovement).forEach(stockMovements::add);
+				stockMovementRepository.findByItemsContaining(stockMovement).forEach(stockMovements::add);
 
 			if (stockMovements.isEmpty()) {
 				return new ResponseEntity<>(HttpStatus.NO_CONTENT);
@@ -68,7 +68,7 @@ public class StockMovementController {
 			StockMovement _stockMovement = null;
 			_stockMovement = stockMovementRepository
 						.save(new StockMovement(stockMovement.getCreationDate(), 
-												stockMovement.getItem(),
+												stockMovement.getItems(),
 												stockMovement.getQuantity()));
 			
 			return new ResponseEntity<>(_stockMovement, HttpStatus.CREATED);
@@ -85,7 +85,7 @@ public class StockMovementController {
 		if (StockMovementData.isPresent()) {
 			StockMovement _stockMovement = StockMovementData.get();
 			_stockMovement.setCreationDate(stockMovement.getCreationDate()); 
-			_stockMovement.setItem(stockMovement.getItem());
+			_stockMovement.setItems(stockMovement.getItems());
 			_stockMovement.setQuantity(stockMovement.getQuantity());			
 			return new ResponseEntity<>(stockMovementRepository.save(_stockMovement), HttpStatus.OK);
 			
