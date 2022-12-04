@@ -91,16 +91,20 @@ public class OrderController {
 			 ControllerDto orderDto = service.buildOrder(request);
 			 
 			 if (orderDto == null) {
-				 registroMovementRepository.save(new RegisterStockMovement(new Date(), null, null, SituatioEnum.ENDED_ERROR.toString()));
+				 registroMovementRepository.save(new RegisterStockMovement(new Date(), null, SituatioEnum.ENDED_ERROR.toString()));
 				 return new ResponseEntity<>(orderEmpty, HttpStatus.BAD_REQUEST);
 			}
 	
 			Order _order = orderRepository
 					.save(new Order(new Date(), orderDto.getItem(), orderDto.getQuantity(), orderDto.getUser()));
 			
-			registroMovementRepository.save(new RegisterStockMovement(new Date(), null, _order, SituatioEnum.SUCCESS_COMPLETED.toString()));
+			RegisterStockMovement idMovement = registroMovementRepository.save(new RegisterStockMovement(new Date(), _order, SituatioEnum.SUCCESS_COMPLETED.toString()));
 			
-			response.sendSimpleEmail(orderDto.getUser());
+			orderDto.setCreationDate(new Date());
+			orderDto.setId(_order.getId());
+			response.enviarEmail(request, orderDto);
+			
+			
 			
 			return new ResponseEntity<>(_order, HttpStatus.CREATED);
 			
