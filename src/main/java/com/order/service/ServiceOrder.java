@@ -26,6 +26,8 @@ public class ServiceOrder {
 	ItemRepository itemRepository;
 	@Autowired
 	UserRepository userRepository;
+	@Autowired
+	LoggerService loggerService;
 	
 
 	public ControllerDto buildOrder(Request request) {
@@ -40,7 +42,6 @@ public class ServiceOrder {
 					controllerDto.setItem(itemEntity);
 					controllerDto.setUser(userEntiry);
 					upadateStockQtd(stock.get().getQuantity(), request.getQuantity(), stock.get());	
-					LOGGER.info("controllerDto create sucess");
 					return controllerDto;					
 				} else {
 					if (stock.get().getQuantity() != 0) {
@@ -48,15 +49,17 @@ public class ServiceOrder {
 						controllerDto.setItem(itemEntity);
 						controllerDto.setUser(userEntiry);
 						upadateStockQtd(stock.get().getQuantity(), request.getQuantity(), stock.get());
-						LOGGER.warn("controllerDto create whith missing item!");
 						return controllerDto;
+					}else {
+						loggerService.resgisterErrorStokMovement(stock);		
+						return null;
 					}					
 				}
 			}	
 		} catch (Exception e) {
-			LOGGER.error("Error system service" + e);
+			loggerService.printErros("Error system service" + e);
 		}		
-		LOGGER.error("Error system service buildOrder null!");
+		loggerService.printErros("Error system service buildOrder null!");
 		return null;
 	}
 	
@@ -68,17 +71,13 @@ public class ServiceOrder {
 			
 			if (qtdStock - qtdSRequest <= 0) {
 				stockMovement.setQuantity(0L);
-				LOGGER.warn("StockMovement item id: " + stockMovement.getId() + " , " 
-				+ "Item name: " + stockMovement.getItem().getName()  + " , " 
-				+ "Item qtd: " + stockMovement.getQuantity());
 			} else {
 				stockMovement.setQuantity(qtdStock - qtdSRequest);
 			}
 			
 			stockMovementRepository.saveAndFlush(stockMovement);
-			LOGGER.info("StockMovement update sucess!");
 		} catch (Exception e) {
-			LOGGER.error("Error system service" + e);
+			loggerService.printErros("Error system service" + e);
 		}
 				
 		

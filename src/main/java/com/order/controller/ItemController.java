@@ -22,6 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.order.model.Item;
 import com.order.repository.ItemRepository;
+import com.order.service.LoggerService;
 
 @CrossOrigin(origins = "http://localhost:8081")
 @RestController
@@ -30,6 +31,8 @@ public class ItemController {
 	private static final Logger LOGGER = LoggerFactory.getLogger(ItemController.class);
 	@Autowired
 	ItemRepository itemRepository;
+	@Autowired
+	LoggerService loggerService;
 
 	@GetMapping("/items")
 	public ResponseEntity<List<Item>> getAllItems(@RequestParam(required = false) String item) {
@@ -42,13 +45,13 @@ public class ItemController {
 				itemRepository.findByNameContaining(item).forEach(Items::add);
 
 			if (Items.isEmpty()) {
-				LOGGER.warn("Item not find");
+				loggerService.printErros("Item not find");
 				return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 			}
 			LOGGER.info("Items find  sucess");
 			return new ResponseEntity<>(Items, HttpStatus.OK);
 		} catch (Exception e) {
-			LOGGER.error("Error system" + e);
+			loggerService.printErros("Error system" + e);
 			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
@@ -62,11 +65,11 @@ public class ItemController {
 				LOGGER.info("Item find  sucess");
 				return new ResponseEntity<>(ItemData.get(), HttpStatus.OK);
 			} else {
-				LOGGER.warn("Item not find");
+				loggerService.printErros("Item not find");
 				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 			}
 		} catch (Exception e) {
-			LOGGER.error("Error system" + e);
+			loggerService.printErros("Error system" + e);
 		}
 		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 	}
@@ -79,8 +82,8 @@ public class ItemController {
 			LOGGER.info("Order create sucess");
 			return new ResponseEntity<>(_Item, HttpStatus.CREATED);
 		} catch (Exception e) {
-			LOGGER.error("Erro in processo operation: CREATE_ITEM");
-			LOGGER.error("Error system" + e);
+			loggerService.printErros("Erro in processo operation: CREATE_ITEM");
+			loggerService.printErros("Error system Item" + e);
 			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
@@ -95,11 +98,11 @@ public class ItemController {
 				LOGGER.info("Update sucess");
 				return new ResponseEntity<>(itemRepository.save(_item), HttpStatus.OK);
 			} else {
-				LOGGER.error("Update error: Not found");
+				loggerService.printErros("Update error: Item not found");
 				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 			}
 		} catch (Exception e) {
-			LOGGER.error("Error system" + e);
+			loggerService.printErros("Error system" + e);
 		}
 		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 	}
@@ -111,7 +114,7 @@ public class ItemController {
 			LOGGER.info("Order ID " + id + " Deleted Sucess");
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		} catch (Exception e) {
-			LOGGER.error("Error system" + e);
+			loggerService.printErros("Error system" + e);
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
@@ -123,7 +126,7 @@ public class ItemController {
 			LOGGER.info("All orders Deleteds Sucess");
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		} catch (Exception e) {
-			LOGGER.error("Error system" + e);
+			loggerService.printErros("Error system" + e);
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 

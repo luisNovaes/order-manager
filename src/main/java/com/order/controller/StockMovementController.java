@@ -28,6 +28,7 @@ import com.order.repository.ItemRepository;
 import com.order.repository.StockMovementRepository;
 import com.order.repository.UserRepository;
 import com.order.request.Request;
+import com.order.service.LoggerService;
 
 @CrossOrigin(origins = "http://localhost:8081")
 @RestController
@@ -40,6 +41,8 @@ public class StockMovementController {
 	UserRepository userRepository;
 	@Autowired
 	ItemRepository itemRepository;
+	@Autowired
+	LoggerService loggerService;
 
 	@GetMapping("/stockMovements")
 	public ResponseEntity<List<StockMovement>> getAllStockMovements(@RequestParam(required = false) String stockMovement) {
@@ -52,13 +55,13 @@ public class StockMovementController {
 				stockMovementRepository.findByItemContaining(stockMovement).forEach(stockMovements::add);
 
 			if (stockMovements.isEmpty()) {
-				LOGGER.warn("StockMovements not find");
+				loggerService.printErros("StockMovements not find");
 				return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 			}
 			LOGGER.info("StockMovements find  sucess");
 			return new ResponseEntity<>(stockMovements, HttpStatus.OK);
 		} catch (Exception e) {
-			LOGGER.error("Error system" + e);
+			loggerService.printErros("Error system" + e);
 			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
@@ -71,12 +74,12 @@ public class StockMovementController {
 			LOGGER.info("StockMovemen find  sucess");
 			return new ResponseEntity<>(StockMovementData.get(), HttpStatus.OK);
 		} else {
-			LOGGER.error("StockMovemen Not found");
+			loggerService.printErros("StockMovemen Not found");
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
 			
 		} catch (Exception e) {
-			LOGGER.error("Error system" + e);
+			loggerService.printErros("Error system" + e);
 		}
 		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 	}
@@ -93,7 +96,7 @@ public class StockMovementController {
 			return new ResponseEntity<>(_stockMovement, HttpStatus.CREATED);
 			
 		} catch (Exception e) {
-			LOGGER.error("Error system stockMovement" + e);
+			loggerService.printErros("Error system stockMovement" + e);
 			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
@@ -111,11 +114,11 @@ public class StockMovementController {
 				LOGGER.info("Update stockMovement sucess");
 				return new ResponseEntity<>(stockMovementRepository.save(_stockMovement), HttpStatus.OK);				
 			} else {
-				LOGGER.error("Update stockMovement error: Not found");
+				loggerService.printErros("Update stockMovement error: Not found");
 				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 			}
 		} catch (Exception e) {
-			LOGGER.error("Error system stockMovement" + e);
+			loggerService.printErros("Error system stockMovement" + e);
 		}
 		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 	}
@@ -127,6 +130,7 @@ public class StockMovementController {
 			LOGGER.info("StockMovement ID " + id + " Deleted Sucess");
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		} catch (Exception e) {
+			loggerService.printErros("Error delete stockMovement" + e);
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
@@ -138,7 +142,7 @@ public class StockMovementController {
 			LOGGER.info("All stockMovement Deleteds Sucess");
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		} catch (Exception e) {
-			LOGGER.error("Error system stockMovement" + e);
+			loggerService.printErros("Error system stockMovement" + e);
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 

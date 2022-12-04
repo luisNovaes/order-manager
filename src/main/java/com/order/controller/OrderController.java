@@ -34,6 +34,7 @@ import com.order.repository.UserRepository;
 import com.order.request.Request;
 import com.order.request.RequestOrder;
 import com.order.response.Response;
+import com.order.service.LoggerService;
 import com.order.service.ServiceOrder;
 import com.order.service.dto.ControllerDto;
 
@@ -57,6 +58,8 @@ public class OrderController {
 	
 	@Autowired
 	ServiceOrder service;
+	@Autowired
+	LoggerService loggerService;
 
 	@GetMapping("/orders")
 	public ResponseEntity<List<Order>> getAllOrders(@RequestParam(required = false) String order) {
@@ -75,7 +78,7 @@ public class OrderController {
 			LOGGER.info("Order find  sucess");
 			return new ResponseEntity<>(orders, HttpStatus.OK);
 		} catch (Exception e) {
-			LOGGER.error("Error system" + e);
+			loggerService.printErros("Error system" + e);
 			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
@@ -94,7 +97,7 @@ public class OrderController {
 				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 			}
 		} catch (Exception e) {
-			LOGGER.error("Error system order" + e);
+			loggerService.printErros("Error system order" + e);
 		}
 		LOGGER.error("Error intput data!");
 		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
@@ -102,11 +105,13 @@ public class OrderController {
 
 	@PostMapping("/order")
 	public ResponseEntity<Order> createOrder(@RequestBody Request request) {
+		loggerService.printTitle("CREATE ORDER");
+	
 		Order orderEmpty = new Order();
 		try {
 			 ControllerDto orderDto = service.buildOrder(request);
 			 if (orderDto == null) {
-				 LOGGER.error("Erro order in processo operation: STOCK_MAVEMENT");
+				 loggerService.printErros("Erro operation create order : STOCK_MOVEMENT_INSUFFICIENT_ITEM");
 				 registroMovementRepository.save(new RegisterStockMovement(new Date(), null, SituatioEnum.ENDED_ERROR.toString()));
 				 return new ResponseEntity<>(orderEmpty, HttpStatus.BAD_REQUEST);
 			}
@@ -114,11 +119,11 @@ public class OrderController {
 			RegisterStockMovement idMovement = registroMovementRepository.save(new RegisterStockMovement(new Date(), _order, SituatioEnum.SUCCESS_COMPLETED.toString()));
 			orderDto.setCreationDate(new Date());
 			orderDto.setId(_order.getId());
-			response.enviarEmail(request, orderDto);
-			LOGGER.info("Order create sucess");
+		 boolean sendEmail = response.enviarEmail(request, orderDto);
+			loggerService.detailOrder(request, orderDto, idMovement, sendEmail);
 			return new ResponseEntity<>(_order, HttpStatus.CREATED);
 		} catch (Exception e) {
-			LOGGER.error("Error system Order" + e);
+			loggerService.printErros("Error system Order" + e);
 			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
@@ -145,7 +150,7 @@ public class OrderController {
 				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 			}
 		} catch (Exception e) {
-			LOGGER.error("Error system Order" + e);
+			loggerService.printErros("Error system Order" + e);
 		}
 		return null;	
 	}
@@ -157,7 +162,7 @@ public class OrderController {
 			LOGGER.info("Order ID " + id + " Deleted Order Sucess");
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		} catch (Exception e) {
-			LOGGER.error("Error system Order" + e);
+			loggerService.printErros("Error system Order" + e);
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
@@ -169,7 +174,7 @@ public class OrderController {
 			LOGGER.info("All orders Deleteds Sucess");
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		} catch (Exception e) {
-			LOGGER.error("Error of system Order" + e);
+			loggerService.printErros("Error of system Order" + e);
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 

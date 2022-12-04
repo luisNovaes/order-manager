@@ -20,9 +20,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.order.OrderManagerApplication;
 import com.order.model.User;
 import com.order.repository.UserRepository;
+import com.order.service.LoggerService;
 
 @CrossOrigin(origins = "http://localhost:8081")
 @RestController
@@ -31,6 +31,8 @@ public class UserController {
 	private static final Logger LOGGER = LoggerFactory.getLogger(UserController.class);
 	@Autowired
 	UserRepository userRepository;
+	@Autowired
+	LoggerService loggerService;
 
 	@GetMapping("/users")
 	public ResponseEntity<List<User>> getAllUsers(@RequestParam(required = false) String user) {
@@ -43,13 +45,13 @@ public class UserController {
 				userRepository.findByNameContaining(user).forEach(users::add);
 
 			if (users.isEmpty()) {
-				LOGGER.warn("Users not find");
+				loggerService.printErros("Users not find");
 				return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 			}
 			LOGGER.info("User find  sucess");
 			return new ResponseEntity<>(users, HttpStatus.OK);
 		} catch (Exception e) {
-			LOGGER.error("Error system user " + e);
+			loggerService.printErros("Error system user " + e);
 			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
@@ -63,11 +65,11 @@ public class UserController {
 				LOGGER.info("User find  sucess");
 				return new ResponseEntity<>(userData.get(), HttpStatus.OK);
 			} else {
-				LOGGER.error("User not found");
+				loggerService.printErros("User not found");
 				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 			}
 		} catch (Exception e) {
-			LOGGER.error("Error system user " + e);
+			loggerService.printErros("Error system user " + e);
 		}
 		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 	}
@@ -80,7 +82,7 @@ public class UserController {
 			LOGGER.info("Order user sucess");
 			return new ResponseEntity<>(_user, HttpStatus.CREATED);
 		} catch (Exception e) {
-			LOGGER.error("Error system user" + e);
+			loggerService.printErros("Error system user" + e);
 			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
@@ -96,11 +98,11 @@ public class UserController {
 				LOGGER.info("Update user sucess");
 				return new ResponseEntity<>(userRepository.save(_user), HttpStatus.OK);
 			} else {
-				LOGGER.error("Update user error: Not found");
+				loggerService.printErros("Update user not found");
 				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 			}
 		} catch (Exception e) {
-			LOGGER.error("Error system user" + e);
+			loggerService.printErros("Error system user" + e);
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
 	}
@@ -112,7 +114,7 @@ public class UserController {
 			LOGGER.info("Order ID " + id + " Deleted user Sucess");
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		} catch (Exception e) {
-			LOGGER.error("Error system user" + e);
+			loggerService.printErros("Error system user" + e);
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
@@ -124,7 +126,7 @@ public class UserController {
 			LOGGER.info("All user Deleteds Sucess");
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		} catch (Exception e) {
-			LOGGER.error("Error system users" + e);
+			loggerService.printErros("Error system users" + e);
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 
