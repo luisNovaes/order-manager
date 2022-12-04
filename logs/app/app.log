@@ -2525,3 +2525,106 @@
 04-12-2022 22:20:00.524 | 7527486 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ********************* EMAIL SEND SUCESS ******************************************
 04-12-2022 22:20:00.524 | 7527486 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Email: luismagnovaes@gmail.com                                            
 04-12-2022 22:20:00.524 | 7527486 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ***************************************************************************
+04-12-2022 22:31:17.646 | 903  | [restartedMain] | INFO  | com.order.OrderManagerApplication - Starting OrderManagerApplication using Java 17.0.4.1 with PID 12131 (/home/luisnovaes/Área de Trabalho/springtoo/order-manager/target/classes started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+04-12-2022 22:31:17.648 | 905  | [restartedMain] | INFO  | com.order.OrderManagerApplication - No active profile set, falling back to 1 default profile: "default"
+04-12-2022 22:31:22.727 | 5984 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Started OrderManagerApplication in 5.487 seconds (process running for 6.947)
+04-12-2022 22:31:22.736 | 5993 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+04-12-2022 22:31:22.736 | 5993 | [restartedMain] | INFO  | com.order.OrderManagerApplication - ORDER MANAGER SYSTEM - LUIS MAGNO NOVAES - rel:1.0 - 12/2022
+04-12-2022 22:31:22.736 | 5993 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+04-12-2022 22:31:28.631 | 11888 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - *************************************************************
+04-12-2022 22:31:28.632 | 11889 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+04-12-2022 22:31:28.632 | 11889 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - *************************************************************
+04-12-2022 22:31:31.029 | 14286 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ********************* ORDER CREATE SUCESS DETAIL ****************************************
+04-12-2022 22:31:31.029 | 14286 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Order number: 1                                                   
+04-12-2022 22:31:31.030 | 14287 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Order Date: 4 de dez. de 2022 22:31:28                          
+04-12-2022 22:31:31.030 | 14287 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+04-12-2022 22:31:31.030 | 14287 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Order Item: Keyboard                                         
+04-12-2022 22:31:31.030 | 14287 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+04-12-2022 22:31:31.031 | 14288 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Order The amount: 3                                          
+04-12-2022 22:31:31.031 | 14288 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ***************************************************************************
+04-12-2022 22:31:31.031 | 14288 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ********************* STOCK MOVEMENT DETAIL *******************************
+04-12-2022 22:31:31.031 | 14288 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Stock movement number: 1                                            
+04-12-2022 22:31:31.031 | 14288 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Stock movement Date: Sun Dec 04 22:31:28 WET 2022                                    
+04-12-2022 22:31:31.031 | 14288 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Stock movement Order Number: 1                                  
+04-12-2022 22:31:31.031 | 14288 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Stock movement Situation: SUCCESS_COMPLETED                                  
+04-12-2022 22:31:31.031 | 14288 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ***************************************************************************
+04-12-2022 22:31:31.031 | 14288 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ********************* EMAIL SEND SUCESS ******************************************
+04-12-2022 22:31:31.031 | 14288 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Email: luismagnovaes@gmail.com                                            
+04-12-2022 22:31:31.031 | 14288 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ***************************************************************************
+04-12-2022 22:33:49.761 | 153018 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Starting OrderManagerApplication using Java 17.0.4.1 with PID 12131 (/home/luisnovaes/Área de Trabalho/springtoo/order-manager/target/classes started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+04-12-2022 22:33:49.762 | 153019 | [restartedMain] | INFO  | com.order.OrderManagerApplication - No active profile set, falling back to 1 default profile: "default"
+04-12-2022 22:33:50.805 | 154062 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Started OrderManagerApplication in 1.087 seconds (process running for 155.025)
+04-12-2022 22:33:50.809 | 154066 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+04-12-2022 22:33:50.809 | 154066 | [restartedMain] | INFO  | com.order.OrderManagerApplication - ORDER MANAGER SYSTEM - LUIS MAGNO NOVAES - rel:1.0 - 12/2022
+04-12-2022 22:33:50.809 | 154066 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+04-12-2022 22:35:18.579 | 241836 | [http-nio-8080-exec-3] | WARN  | c.order.controller.OrderController - Orders not find
+04-12-2022 22:35:25.003 | 248260 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - *************************************************************
+04-12-2022 22:35:25.003 | 248260 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+04-12-2022 22:35:25.003 | 248260 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - *************************************************************
+04-12-2022 22:35:25.013 | 248270 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+04-12-2022 22:35:25.013 | 248270 | [http-nio-8080-exec-1] | ERROR | com.order.service.LoggerService - Error detail: Error system servicejava.lang.NullPointerException: Cannot invoke "com.order.model.Item.getId()" because "itemEntity" is null                                                            
+04-12-2022 22:35:25.013 | 248270 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+04-12-2022 22:35:25.013 | 248270 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+04-12-2022 22:35:25.013 | 248270 | [http-nio-8080-exec-1] | ERROR | com.order.service.LoggerService - Error detail: Error system service buildOrder null!                                                            
+04-12-2022 22:35:25.013 | 248270 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+04-12-2022 22:35:25.013 | 248270 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+04-12-2022 22:35:25.013 | 248270 | [http-nio-8080-exec-1] | ERROR | com.order.service.LoggerService - Error detail: Erro operation create order : STOCK_MOVEMENT_INSUFFICIENT_ITEM                                                            
+04-12-2022 22:35:25.013 | 248270 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+04-12-2022 22:35:26.232 | 249489 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - *************************************************************
+04-12-2022 22:35:26.232 | 249489 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+04-12-2022 22:35:26.232 | 249489 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - *************************************************************
+04-12-2022 22:35:26.241 | 249498 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+04-12-2022 22:35:26.241 | 249498 | [http-nio-8080-exec-5] | ERROR | com.order.service.LoggerService - Error detail: Error system servicejava.lang.NullPointerException: Cannot invoke "com.order.model.Item.getId()" because "itemEntity" is null                                                            
+04-12-2022 22:35:26.241 | 249498 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+04-12-2022 22:35:26.241 | 249498 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+04-12-2022 22:35:26.241 | 249498 | [http-nio-8080-exec-5] | ERROR | com.order.service.LoggerService - Error detail: Error system service buildOrder null!                                                            
+04-12-2022 22:35:26.241 | 249498 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+04-12-2022 22:35:26.241 | 249498 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+04-12-2022 22:35:26.241 | 249498 | [http-nio-8080-exec-5] | ERROR | com.order.service.LoggerService - Error detail: Erro operation create order : STOCK_MOVEMENT_INSUFFICIENT_ITEM                                                            
+04-12-2022 22:35:26.241 | 249498 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+04-12-2022 22:35:32.828 | 1113 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Starting OrderManagerApplication using Java 17.0.4.1 with PID 12416 (/home/luisnovaes/Área de Trabalho/springtoo/order-manager/target/classes started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+04-12-2022 22:35:32.833 | 1118 | [restartedMain] | INFO  | com.order.OrderManagerApplication - No active profile set, falling back to 1 default profile: "default"
+04-12-2022 22:35:37.839 | 6124 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Started OrderManagerApplication in 5.629 seconds (process running for 7.079)
+04-12-2022 22:35:37.846 | 6131 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+04-12-2022 22:35:37.846 | 6131 | [restartedMain] | INFO  | com.order.OrderManagerApplication - ORDER MANAGER SYSTEM - LUIS MAGNO NOVAES - rel:1.0 - 12/2022
+04-12-2022 22:35:37.846 | 6131 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+04-12-2022 22:35:45.617 | 13902 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - *************************************************************
+04-12-2022 22:35:45.617 | 13902 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+04-12-2022 22:35:45.617 | 13902 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - *************************************************************
+04-12-2022 22:35:48.051 | 16336 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ********************* ORDER CREATE SUCESS DETAIL ****************************************
+04-12-2022 22:35:48.051 | 16336 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Order number: 1                                                   
+04-12-2022 22:35:48.052 | 16337 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Order Date: 4 de dez. de 2022 22:35:45                          
+04-12-2022 22:35:48.052 | 16337 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+04-12-2022 22:35:48.053 | 16338 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Order Item: Keyboard                                         
+04-12-2022 22:35:48.053 | 16338 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+04-12-2022 22:35:48.053 | 16338 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Order The amount: 3                                          
+04-12-2022 22:35:48.053 | 16338 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ***************************************************************************
+04-12-2022 22:35:48.053 | 16338 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ********************* STOCK MOVEMENT DETAIL *******************************
+04-12-2022 22:35:48.053 | 16338 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Stock movement number: 1                                            
+04-12-2022 22:35:48.053 | 16338 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Stock movement Date: Sun Dec 04 22:35:45 WET 2022                                    
+04-12-2022 22:35:48.053 | 16338 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Stock movement Order Number: 1                                  
+04-12-2022 22:35:48.053 | 16338 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Stock movement Situation: SUCCESS_COMPLETED                                  
+04-12-2022 22:35:48.053 | 16338 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ***************************************************************************
+04-12-2022 22:35:48.053 | 16338 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ********************* EMAIL SEND SUCESS ******************************************
+04-12-2022 22:35:48.053 | 16338 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Email: luismagnovaes@gmail.com                                            
+04-12-2022 22:35:48.053 | 16338 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ***************************************************************************
+04-12-2022 22:39:36.567 | 244852 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - *************************************************************
+04-12-2022 22:39:36.568 | 244853 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+04-12-2022 22:39:36.568 | 244853 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - *************************************************************
+04-12-2022 22:39:38.049 | 246334 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ********************* ORDER CREATE SUCESS DETAIL ****************************************
+04-12-2022 22:39:38.049 | 246334 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - Order number: 2                                                   
+04-12-2022 22:39:38.052 | 246337 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - Order Date: 4 de dez. de 2022 22:39:36                          
+04-12-2022 22:39:38.053 | 246338 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+04-12-2022 22:39:38.053 | 246338 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - Order Item: Keyboard                                         
+04-12-2022 22:39:38.053 | 246338 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+04-12-2022 22:39:38.053 | 246338 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - Order The amount: 3                                          
+04-12-2022 22:39:38.054 | 246339 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ***************************************************************************
+04-12-2022 22:39:38.054 | 246339 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ********************* STOCK MOVEMENT DETAIL *******************************
+04-12-2022 22:39:38.054 | 246339 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - Stock movement number: 2                                            
+04-12-2022 22:39:38.055 | 246340 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - Stock movement Date: Sun Dec 04 22:39:36 WET 2022                                    
+04-12-2022 22:39:38.055 | 246340 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - Stock movement Order Number: 2                                  
+04-12-2022 22:39:38.055 | 246340 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - Stock movement Situation: SUCCESS_COMPLETED                                  
+04-12-2022 22:39:38.055 | 246340 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ***************************************************************************
+04-12-2022 22:39:38.056 | 246341 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ********************* EMAIL SEND SUCESS ******************************************
+04-12-2022 22:39:38.056 | 246341 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - Email: luismagnovaes@gmail.com                                            
+04-12-2022 22:39:38.056 | 246341 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ***************************************************************************
