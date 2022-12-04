@@ -30,6 +30,7 @@ import com.order.repository.RegistroMovementRepository;
 import com.order.repository.UserRepository;
 import com.order.request.Request;
 import com.order.request.RequestOrder;
+import com.order.response.Response;
 import com.order.service.ServiceOrder;
 import com.order.service.dto.ControllerDto;
 
@@ -46,6 +47,8 @@ public class OrderController {
 	ItemRepository itemRepository;
 	@Autowired
 	RegistroMovementRepository registroMovementRepository;
+	@Autowired
+	Response response;
 	
 	@Autowired
 	ServiceOrder service;
@@ -96,6 +99,8 @@ public class OrderController {
 					.save(new Order(new Date(), orderDto.getItem(), orderDto.getQuantity(), orderDto.getUser()));
 			
 			registroMovementRepository.save(new RegisterStockMovement(new Date(), null, _order, SituatioEnum.SUCCESS_COMPLETED.toString()));
+			
+			response.sendSimpleEmail(orderDto.getUser());
 			
 			return new ResponseEntity<>(_order, HttpStatus.CREATED);
 			

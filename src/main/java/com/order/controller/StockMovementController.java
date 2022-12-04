@@ -21,7 +21,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.order.model.Item;
 import com.order.model.StockMovement;
-import com.order.model.User;
 import com.order.repository.ItemRepository;
 import com.order.repository.StockMovementRepository;
 import com.order.repository.UserRepository;
