@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,6 +20,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.order.OrderManagerApplication;
 import com.order.model.User;
 import com.order.repository.UserRepository;
 
@@ -25,7 +28,7 @@ import com.order.repository.UserRepository;
 @RestController
 @RequestMapping("/api/user")
 public class UserController {
-	
+	private static final Logger LOGGER = LoggerFactory.getLogger(UserController.class);
 	@Autowired
 	UserRepository userRepository;
 
@@ -40,24 +43,33 @@ public class UserController {
 				userRepository.findByNameContaining(user).forEach(users::add);
 
 			if (users.isEmpty()) {
+				LOGGER.warn("Users not find");
 				return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 			}
-
+			LOGGER.info("User find  sucess");
 			return new ResponseEntity<>(users, HttpStatus.OK);
 		} catch (Exception e) {
+			LOGGER.error("Error system user " + e);
 			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
 
 	@GetMapping("/user/{id}")
 	public ResponseEntity<User> getUserById(@PathVariable("id") long id) {
-		Optional<User> userData = userRepository.findById(id);
+		try {
+			Optional<User> userData = userRepository.findById(id);
 
-		if (userData.isPresent()) {
-			return new ResponseEntity<>(userData.get(), HttpStatus.OK);
-		} else {
-			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+			if (userData.isPresent()) {
+				LOGGER.info("User find  sucess");
+				return new ResponseEntity<>(userData.get(), HttpStatus.OK);
+			} else {
+				LOGGER.error("User not found");
+				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+			}
+		} catch (Exception e) {
+			LOGGER.error("Error system user " + e);
 		}
+		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 	}
 
 	@PostMapping("/user")
@@ -65,22 +77,30 @@ public class UserController {
 		try {
 			User _user = userRepository
 					.save(new User(user.getName(), user.getEmail()));
+			LOGGER.info("Order user sucess");
 			return new ResponseEntity<>(_user, HttpStatus.CREATED);
 		} catch (Exception e) {
+			LOGGER.error("Error system user" + e);
 			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
 
 	@PutMapping("/user/{id}")
 	public ResponseEntity<User> updateUser(@PathVariable("id") long id, @RequestBody User user) {
-		Optional<User> userData = userRepository.findById(id);
-
-		if (userData.isPresent()) {
-			User _user = userData.get();
-			_user.setName(user.getName());
-			_user.setEmail(user.getEmail());
-			return new ResponseEntity<>(userRepository.save(_user), HttpStatus.OK);
-		} else {
+		try {
+			Optional<User> userData = userRepository.findById(id);
+			if (userData.isPresent()) {
+				User _user = userData.get();
+				_user.setName(user.getName());
+				_user.setEmail(user.getEmail());
+				LOGGER.info("Update user sucess");
+				return new ResponseEntity<>(userRepository.save(_user), HttpStatus.OK);
+			} else {
+				LOGGER.error("Update user error: Not found");
+				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+			}
+		} catch (Exception e) {
+			LOGGER.error("Error system user" + e);
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
 	}
@@ -89,8 +109,10 @@ public class UserController {
 	public ResponseEntity<HttpStatus> deleteUser(@PathVariable("id") long id) {
 		try {
 			userRepository.deleteById(id);
+			LOGGER.info("Order ID " + id + " Deleted user Sucess");
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		} catch (Exception e) {
+			LOGGER.error("Error system user" + e);
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
@@ -99,8 +121,10 @@ public class UserController {
 	public ResponseEntity<HttpStatus> deleteAllUsers() {
 		try {
 			userRepository.deleteAll();
+			LOGGER.info("All user Deleteds Sucess");
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		} catch (Exception e) {
+			LOGGER.error("Error system users" + e);
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 
