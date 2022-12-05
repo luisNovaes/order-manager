@@ -1,5 +1,8 @@
-FROM openjdk:8-jdk-alpine
-ARG JAR_FILE=target/*.jar
-COPY ${JAR_FILE} order-manager.jar
+FROM openjdk:17-jdk-alpine
+VOLUME /tmp
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","/order-manager.jar"]
+RUN mkdir -p /app/
+RUN mkdir -p /app/logs/
+ADD target/order-manager.jar /app/app.jar
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-Dspring.profiles.active=container", "-jar", "/app/app.jar"]
+MAINTAINER luismagnovaes.unipessoal@gmail.com

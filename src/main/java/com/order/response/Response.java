@@ -2,8 +2,6 @@ package com.order.response;
 
 
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.mail.SimpleMailMessage;
@@ -16,10 +14,10 @@ import com.order.service.LoggerService;
 import com.order.service.dto.ControllerDto;
 
 import jakarta.mail.MessagingException;
+import jakarta.mail.internet.MimeMessage;
 		
 @Service
 public class Response {
-	private static final Logger LOGGER = LoggerFactory.getLogger(Response.class);
 	private final JavaMailSender javaMailSender;
 	
 	@Autowired
@@ -36,7 +34,7 @@ public class Response {
         	String para = orderDto.getUser().getEmail();
         	String conteudo = orderDto.getId() + " , "   + orderDto.getCreationDate().toLocaleString() + " , "   + request.getUser() +  " , "  +  
         					  request.getItem() +  " , "  + request.getQuantity();
-            var mensagem = new SimpleMailMessage();
+             SimpleMailMessage mensagem = new SimpleMailMessage();
             mensagem.setTo(para);
             mensagem.setSubject(titulo);
             mensagem.setText(conteudo);
@@ -50,8 +48,8 @@ public class Response {
 
     public boolean enviarEmailComAnexo(String para, String titulo, String conteudo, String arquivo) throws MessagingException {
     	try {
-	        var mensagem = javaMailSender.createMimeMessage();
-	        var helper = new MimeMessageHelper(mensagem, true);
+	         MimeMessage mensagem = javaMailSender.createMimeMessage();
+	         MimeMessageHelper helper = new MimeMessageHelper(mensagem, true);
 	        helper.setTo(para);
 	        helper.setSubject(titulo);
 	        helper.setText(conteudo, true);
