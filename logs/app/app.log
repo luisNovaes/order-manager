@@ -1,26 +1,71 @@
-05-12-2022 00:19:38.532 | 1034 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Starting OrderManagerApplication using Java 17.0.4.1 with PID 29856 (/home/luisnovaes/Área de Trabalho/springtoo/order-manager/target/classes started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
-05-12-2022 00:19:38.542 | 1044 | [restartedMain] | INFO  | com.order.OrderManagerApplication - No active profile set, falling back to 1 default profile: "default"
-05-12-2022 00:19:41.900 | 4402 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Started OrderManagerApplication in 3.889 seconds (process running for 4.989)
-05-12-2022 00:19:41.904 | 4406 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
-05-12-2022 00:19:41.904 | 4406 | [restartedMain] | INFO  | com.order.OrderManagerApplication - ORDER MANAGER SYSTEM - LUIS MAGNO NOVAES - rel:1.0 - 12/2022
-05-12-2022 00:19:41.904 | 4406 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
-05-12-2022 00:20:09.646 | 32148 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - *************************************************************
-05-12-2022 00:20:09.647 | 32149 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
-05-12-2022 00:20:09.647 | 32149 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - *************************************************************
-05-12-2022 00:20:11.968 | 34470 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ********************* ORDER CREATE SUCESS DETAIL ****************************************
-05-12-2022 00:20:11.969 | 34471 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - Order number: 1                                                   
-05-12-2022 00:20:11.970 | 34472 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - Order Date: 5 de dez. de 2022 00:20:09                          
-05-12-2022 00:20:11.970 | 34472 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
-05-12-2022 00:20:11.971 | 34473 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - Order Item: Keyboard                                         
-05-12-2022 00:20:11.971 | 34473 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
-05-12-2022 00:20:11.971 | 34473 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - Order The amount: 3                                          
-05-12-2022 00:20:11.971 | 34473 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ***************************************************************************
-05-12-2022 00:20:11.971 | 34473 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ********************* STOCK MOVEMENT DETAIL *******************************
-05-12-2022 00:20:11.971 | 34473 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - Stock movement number: 1                                            
-05-12-2022 00:20:11.972 | 34474 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - Stock movement Date: Mon Dec 05 00:20:09 WET 2022                                    
-05-12-2022 00:20:11.972 | 34474 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - Stock movement Order Number: 1                                  
-05-12-2022 00:20:11.972 | 34474 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - Stock movement Situation: SUCCESS_COMPLETED                                  
-05-12-2022 00:20:11.972 | 34474 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ***************************************************************************
-05-12-2022 00:20:11.972 | 34474 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ********************* EMAIL SEND SUCESS ******************************************
-05-12-2022 00:20:11.972 | 34474 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - Email: luis@gmail.com                                            
-05-12-2022 00:20:11.973 | 34475 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ***************************************************************************
+05-12-2022 00:28:15.286 | 1080 | [main] | INFO  | c.o.OrderManagerApplicationTests - Starting OrderManagerApplicationTests using Java 17.0.4.1 with PID 30912 (started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+05-12-2022 00:28:15.289 | 1083 | [main] | INFO  | c.o.OrderManagerApplicationTests - No active profile set, falling back to 1 default profile: "default"
+05-12-2022 00:28:19.685 | 5479 | [main] | INFO  | c.o.OrderManagerApplicationTests - Started OrderManagerApplicationTests in 4.727 seconds (process running for 6.332)
+05-12-2022 00:52:19.095 | 1153 | [main] | INFO  | c.o.OrderManagerApplicationTests - Starting OrderManagerApplicationTests using Java 17.0.4.1 with PID 2814 (started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+05-12-2022 00:52:19.098 | 1156 | [main] | INFO  | c.o.OrderManagerApplicationTests - No active profile set, falling back to 1 default profile: "default"
+05-12-2022 00:55:47.569 | 956  | [main] | INFO  | c.o.OrderManagerApplicationTests - Starting OrderManagerApplicationTests using Java 17.0.4.1 with PID 3449 (started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+05-12-2022 00:55:47.571 | 958  | [main] | INFO  | c.o.OrderManagerApplicationTests - No active profile set, falling back to 1 default profile: "default"
+05-12-2022 00:57:47.461 | 709  | [restartedMain] | INFO  | com.order.OrderManagerApplication - Starting OrderManagerApplication using Java 17.0.4.1 with PID 3699 (/home/luisnovaes/Área de Trabalho/springtoo/order-manager/target/classes started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+05-12-2022 00:57:47.463 | 711  | [restartedMain] | INFO  | com.order.OrderManagerApplication - No active profile set, falling back to 1 default profile: "default"
+05-12-2022 00:58:21.728 | 898  | [restartedMain] | INFO  | com.order.OrderManagerApplication - Starting OrderManagerApplication using Java 17.0.4.1 with PID 3759 (/home/luisnovaes/Área de Trabalho/springtoo/order-manager/target/classes started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+05-12-2022 00:58:21.734 | 904  | [restartedMain] | INFO  | com.order.OrderManagerApplication - No active profile set, falling back to 1 default profile: "default"
+05-12-2022 01:00:09.356 | 839  | [main] | INFO  | c.o.OrderManagerApplicationTests - Starting OrderManagerApplicationTests using Java 17.0.4.1 with PID 3961 (started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+05-12-2022 01:00:09.358 | 841  | [main] | INFO  | c.o.OrderManagerApplicationTests - No active profile set, falling back to 1 default profile: "default"
+05-12-2022 01:00:42.766 | 674  | [restartedMain] | INFO  | com.order.OrderManagerApplication - Starting OrderManagerApplication using Java 17.0.4.1 with PID 4061 (/home/luisnovaes/Área de Trabalho/springtoo/order-manager/target/classes started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+05-12-2022 01:00:42.768 | 676  | [restartedMain] | INFO  | com.order.OrderManagerApplication - No active profile set, falling back to 1 default profile: "default"
+05-12-2022 01:02:53.708 | 895  | [restartedMain] | INFO  | com.order.OrderManagerApplication - Starting OrderManagerApplication using Java 17.0.4.1 with PID 5078 (/home/luisnovaes/Área de Trabalho/springtoo/order-manager/target/classes started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+05-12-2022 01:02:53.711 | 898  | [restartedMain] | INFO  | com.order.OrderManagerApplication - No active profile set, falling back to 1 default profile: "default"
+05-12-2022 01:02:58.425 | 5612 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Started OrderManagerApplication in 5.161 seconds (process running for 6.249)
+05-12-2022 01:02:58.431 | 5618 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+05-12-2022 01:02:58.431 | 5618 | [restartedMain] | INFO  | com.order.OrderManagerApplication - ORDER MANAGER SYSTEM - LUIS MAGNO NOVAES - rel:1.0 - 12/2022
+05-12-2022 01:02:58.431 | 5618 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+05-12-2022 01:03:18.087 | 25274 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - *************************************************************
+05-12-2022 01:03:18.088 | 25275 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+05-12-2022 01:03:18.088 | 25275 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - *************************************************************
+05-12-2022 01:03:18.273 | 25460 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+05-12-2022 01:03:18.273 | 25460 | [http-nio-8080-exec-1] | ERROR | com.order.service.LoggerService - Error detail: Error system servicejava.lang.NullPointerException: Cannot invoke "com.order.model.Item.getId()" because "itemEntity" is null                                                            
+05-12-2022 01:03:18.273 | 25460 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+05-12-2022 01:03:18.273 | 25460 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+05-12-2022 01:03:18.273 | 25460 | [http-nio-8080-exec-1] | ERROR | com.order.service.LoggerService - Error detail: Error system service buildOrder null!                                                            
+05-12-2022 01:03:18.273 | 25460 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+05-12-2022 01:03:18.274 | 25461 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+05-12-2022 01:03:18.274 | 25461 | [http-nio-8080-exec-1] | ERROR | com.order.service.LoggerService - Error detail: Erro operation create order : STOCK_MOVEMENT_INSUFFICIENT_ITEM                                                            
+05-12-2022 01:03:18.274 | 25461 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+05-12-2022 01:05:57.235 | 1102 | [main] | INFO  | c.o.OrderManagerApplicationTests - Starting OrderManagerApplicationTests using Java 17.0.4.1 with PID 5350 (started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+05-12-2022 01:05:57.237 | 1104 | [main] | INFO  | c.o.OrderManagerApplicationTests - No active profile set, falling back to 1 default profile: "default"
+05-12-2022 01:06:01.466 | 5333 | [main] | INFO  | c.o.OrderManagerApplicationTests - Started OrderManagerApplicationTests in 4.509 seconds (process running for 6.314)
+05-12-2022 01:06:44.920 | 1035 | [main] | INFO  | c.o.OrderManagerApplicationTests - Starting OrderManagerApplicationTests using Java 17.0.4.1 with PID 5661 (started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+05-12-2022 01:06:44.923 | 1038 | [main] | INFO  | c.o.OrderManagerApplicationTests - No active profile set, falling back to 1 default profile: "default"
+05-12-2022 01:06:49.519 | 5634 | [main] | INFO  | c.o.OrderManagerApplicationTests - Started OrderManagerApplicationTests in 4.91 seconds (process running for 6.406)
+05-12-2022 01:08:41.784 | 918  | [main] | INFO  | c.o.OrderManagerApplicationTests - Starting OrderManagerApplicationTests using Java 17.0.4.1 with PID 5876 (started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+05-12-2022 01:08:41.790 | 924  | [main] | INFO  | c.o.OrderManagerApplicationTests - No active profile set, falling back to 1 default profile: "default"
+05-12-2022 01:08:45.874 | 5008 | [main] | INFO  | c.o.OrderManagerApplicationTests - Started OrderManagerApplicationTests in 4.346 seconds (process running for 5.725)
+05-12-2022 01:16:42.677 | 723  | [restartedMain] | INFO  | com.order.OrderManagerApplication - Starting OrderManagerApplication using Java 17.0.4.1 with PID 7027 (/home/luisnovaes/Área de Trabalho/springtoo/order-manager/target/classes started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+05-12-2022 01:16:42.679 | 725  | [restartedMain] | INFO  | com.order.OrderManagerApplication - No active profile set, falling back to 1 default profile: "default"
+05-12-2022 01:16:46.126 | 4172 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Started OrderManagerApplication in 3.757 seconds (process running for 4.794)
+05-12-2022 01:16:46.131 | 4177 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+05-12-2022 01:16:46.131 | 4177 | [restartedMain] | INFO  | com.order.OrderManagerApplication - ORDER MANAGER SYSTEM - LUIS MAGNO NOVAES - rel:1.0 - 12/2022
+05-12-2022 01:16:46.131 | 4177 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+05-12-2022 01:16:53.439 | 11485 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - *************************************************************
+05-12-2022 01:16:53.439 | 11485 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+05-12-2022 01:16:53.439 | 11485 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - *************************************************************
+05-12-2022 01:16:53.669 | 11715 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+05-12-2022 01:16:53.669 | 11715 | [http-nio-8080-exec-2] | ERROR | com.order.service.LoggerService - Error detail: Error system servicejava.lang.NullPointerException: Cannot invoke "com.order.model.Item.getId()" because "itemEntity" is null                                                            
+05-12-2022 01:16:53.669 | 11715 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+05-12-2022 01:16:53.669 | 11715 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+05-12-2022 01:16:53.669 | 11715 | [http-nio-8080-exec-2] | ERROR | com.order.service.LoggerService - Error detail: Error system service buildOrder null!                                                            
+05-12-2022 01:16:53.669 | 11715 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+05-12-2022 01:16:53.669 | 11715 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+05-12-2022 01:16:53.669 | 11715 | [http-nio-8080-exec-2] | ERROR | com.order.service.LoggerService - Error detail: Erro operation create order : STOCK_MOVEMENT_INSUFFICIENT_ITEM                                                            
+05-12-2022 01:16:53.669 | 11715 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+05-12-2022 20:45:09.547 | 835  | [restartedMain] | INFO  | com.order.OrderManagerApplication - Starting OrderManagerApplication using Java 17.0.4.1 with PID 17457 (/home/luisnovaes/Área de Trabalho/springtoo/order-manager/target/classes started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+05-12-2022 20:45:09.551 | 839  | [restartedMain] | INFO  | com.order.OrderManagerApplication - No active profile set, falling back to 1 default profile: "default"
+05-12-2022 20:45:14.343 | 5631 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Started OrderManagerApplication in 5.194 seconds (process running for 6.633)
+05-12-2022 20:45:14.347 | 5635 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+05-12-2022 20:45:14.348 | 5636 | [restartedMain] | INFO  | com.order.OrderManagerApplication - ORDER MANAGER SYSTEM - LUIS MAGNO NOVAES - rel:1.0 - 12/2022
+05-12-2022 20:45:14.348 | 5636 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+05-12-2022 20:51:00.546 | 1095 | [main] | INFO  | c.o.OrderManagerApplicationTests - Starting OrderManagerApplicationTests using Java 17.0.4.1 with PID 18112 (started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+05-12-2022 20:51:00.550 | 1099 | [main] | INFO  | c.o.OrderManagerApplicationTests - No active profile set, falling back to 1 default profile: "default"
+05-12-2022 20:51:04.411 | 4960 | [main] | INFO  | c.o.OrderManagerApplicationTests - Started OrderManagerApplicationTests in 4.227 seconds (process running for 5.571)
+05-12-2022 21:12:11.358 | 962  | [main] | INFO  | c.o.OrderManagerApplicationTests - Starting OrderManagerApplicationTests using Java 17.0.4.1 with PID 20557 (started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+05-12-2022 21:12:11.363 | 967  | [main] | INFO  | c.o.OrderManagerApplicationTests - No active profile set, falling back to 1 default profile: "default"
