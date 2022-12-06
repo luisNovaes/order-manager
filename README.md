@@ -2,6 +2,8 @@
 ### Option 1 -  Using Container
 ####  Setep 1 - Connect pgadmin whith postgresDB 
 * - Enter the root directory of the application and run the command below, (where is the docker-compose.yml file).
+*           $ mvn clean instal -DskipTests
+*           $ docker build -t luisnovaes/order-manager .
 *           $ docker compose up
 ####  Setep 2 - Connect pgadmin whith postgresDB 
 * - Select registe/server in the pgadmin
