@@ -32,7 +32,7 @@
 *   - Password:  root
 *   - Save
 
-####  Setep 3 - Run the Project. 
+####  Setep 4 - Run the Project. 
 *           Import project to IDE, run maven clean, run maven instal and Spring boot APP. 
 ####  Setep 3 - Tests.
   * - There is a file in /order-manager/Postiman/order-manager.postman_collection.json whith collections to Postman .
