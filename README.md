@@ -34,4 +34,7 @@
            - INSERT INTO public.stock_movements (id, creation_date, quantity, item_id) VALUES (5, TIMESTAMP WITH TIME ZONE '2004-10-19 10:23:54+02', 10, 5);
 
 ### Option 2 -  Using maven
+  ####  Setep 1 - Clone the project.
+*           $ git int
+*           $ git clone https://github.com/luisNovaes/order-manager.git
    
