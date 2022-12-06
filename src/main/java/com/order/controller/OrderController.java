@@ -84,7 +84,7 @@ public class OrderController {
 	}
 
 	@GetMapping("/order/{id}")
-	public ResponseEntity<Order> getOrderById(@PathVariable("id") long id) {
+	public ResponseEntity<Order> getOrderById(@PathVariable("id") Long id) {
 		
 		try {
 			Optional<Order> OrderData = orderRepository.findById(id);
@@ -129,7 +129,7 @@ public class OrderController {
 	}
 
 	@PutMapping("/order/{id}")
-	public ResponseEntity<Order> updateOrder(@PathVariable("id") long id, @RequestBody RequestOrder requestOrder) {
+	public ResponseEntity<Order> updateOrder(@PathVariable("id") Long id, @RequestBody RequestOrder requestOrder) {
 		try {
 			Optional<Order> OrderData = orderRepository.findById(id);
 			
@@ -156,14 +156,14 @@ public class OrderController {
 	}
 
 	@DeleteMapping("/order/{id}")
-	public ResponseEntity<HttpStatus> deleteOrder(@PathVariable("id") long id) {
+	public ResponseEntity<HttpStatus> deleteOrder(@PathVariable("id") Long id) {
 		try {
 			deleteRegistroMovement(id);
 			orderRepository.deleteById(id);
 			LOGGER.info("Order ID " + id + " Deleted Order Sucess");
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		} catch (Exception e) {
-			loggerService.printErros("Error system Order " + e);
+			loggerService.printErros("There is a RegistStockMoviment associate!" );
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
@@ -176,17 +176,18 @@ public class OrderController {
 			LOGGER.info("All orders Deleteds Sucess");
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		} catch (Exception e) {
-			loggerService.printErros("Error of system Order " + e);
+			loggerService.printErros("Error system Order " + e );
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 
 	}
 	
-	@DeleteMapping("/RegStockMov")
-	private ResponseEntity<HttpStatus> deleteRegistroMovement(long id) {
+	@DeleteMapping("/RegStockMov/{id}")
+	private ResponseEntity<HttpStatus> deleteRegistroMovement(@PathVariable("id") Long id) {
 		try {
 			Optional<Order> OrderData = orderRepository.findById(id);
 			registroMovementRepository.deleteByOrderId(OrderData.get());
+			//registroMovementRepository.flush();
 			LOGGER.info("RegStockMov Deleted whith Sucess");
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		} catch (Exception e) {

@@ -1245,3 +1245,679 @@
 06-12-2022 05:08:16.282 | 261522 | [http-nio-8080-exec-6] | ERROR | com.order.service.LoggerService - Error detail: Erro operation create order : STOCK_MOVEMENT_INSUFFICIENT_ITEM                                                            
 06-12-2022 05:08:16.282 | 261522 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - ***************************************************************************************
 06-12-2022 05:08:34.802 | 280042 | [http-nio-8080-exec-8] | INFO  | c.o.c.StockMovementController - StockMovements found  sucess
+06-12-2022 10:35:29.432 | 1005 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Starting OrderManagerApplication using Java 17.0.4.1 with PID 13924 (/home/luisnovaes/Área de Trabalho/springtoo/order-manager/target/classes started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+06-12-2022 10:35:29.440 | 1013 | [restartedMain] | INFO  | com.order.OrderManagerApplication - No active profile set, falling back to 1 default profile: "default"
+06-12-2022 10:35:33.975 | 5548 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Started OrderManagerApplication in 5.005 seconds (process running for 7.028)
+06-12-2022 10:35:33.982 | 5555 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 10:35:33.982 | 5555 | [restartedMain] | INFO  | com.order.OrderManagerApplication - ORDER MANAGER SYSTEM - LUIS MAGNO NOVAES - rel:1.0 - 12/2022
+06-12-2022 10:35:33.982 | 5555 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 10:37:07.760 | 99333 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Starting OrderManagerApplication using Java 17.0.4.1 with PID 13924 (/home/luisnovaes/Área de Trabalho/springtoo/order-manager/target/classes started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+06-12-2022 10:37:07.760 | 99333 | [restartedMain] | INFO  | com.order.OrderManagerApplication - No active profile set, falling back to 1 default profile: "default"
+06-12-2022 10:37:08.922 | 100495 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Started OrderManagerApplication in 1.205 seconds (process running for 101.974)
+06-12-2022 10:37:08.925 | 100498 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 10:37:08.925 | 100498 | [restartedMain] | INFO  | com.order.OrderManagerApplication - ORDER MANAGER SYSTEM - LUIS MAGNO NOVAES - rel:1.0 - 12/2022
+06-12-2022 10:37:08.925 | 100498 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 10:37:10.486 | 102059 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Starting OrderManagerApplication using Java 17.0.4.1 with PID 13924 (/home/luisnovaes/Área de Trabalho/springtoo/order-manager/target/classes started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+06-12-2022 10:37:10.487 | 102060 | [restartedMain] | INFO  | com.order.OrderManagerApplication - No active profile set, falling back to 1 default profile: "default"
+06-12-2022 10:37:12.161 | 103734 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Started OrderManagerApplication in 1.701 seconds (process running for 105.214)
+06-12-2022 10:37:12.164 | 103737 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 10:37:12.164 | 103737 | [restartedMain] | INFO  | com.order.OrderManagerApplication - ORDER MANAGER SYSTEM - LUIS MAGNO NOVAES - rel:1.0 - 12/2022
+06-12-2022 10:37:12.164 | 103737 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 10:37:23.719 | 115292 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Starting OrderManagerApplication using Java 17.0.4.1 with PID 13924 (/home/luisnovaes/Área de Trabalho/springtoo/order-manager/target/classes started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+06-12-2022 10:37:23.719 | 115292 | [restartedMain] | INFO  | com.order.OrderManagerApplication - No active profile set, falling back to 1 default profile: "default"
+06-12-2022 10:37:24.749 | 116322 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Started OrderManagerApplication in 1.054 seconds (process running for 117.801)
+06-12-2022 10:37:24.754 | 116327 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 10:37:24.754 | 116327 | [restartedMain] | INFO  | com.order.OrderManagerApplication - ORDER MANAGER SYSTEM - LUIS MAGNO NOVAES - rel:1.0 - 12/2022
+06-12-2022 10:37:24.754 | 116327 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 10:37:36.718 | 128291 | [http-nio-8080-exec-3] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 10:37:36.719 | 128292 | [http-nio-8080-exec-3] | ERROR | com.order.service.LoggerService - Error detail: Item not found                                                            
+06-12-2022 10:37:36.719 | 128292 | [http-nio-8080-exec-3] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 10:37:46.795 | 138368 | [http-nio-8080-exec-4] | INFO  | c.order.controller.ItemController - Item create sucess
+06-12-2022 10:37:53.096 | 144669 | [http-nio-8080-exec-1] | INFO  | c.order.controller.UserController - User create sucess
+06-12-2022 10:37:59.547 | 151120 | [http-nio-8080-exec-5] | INFO  | c.o.c.StockMovementController - StockMovement create sucess
+06-12-2022 10:38:04.331 | 155904 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 10:38:04.331 | 155904 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+06-12-2022 10:38:04.331 | 155904 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 10:38:04.486 | 156059 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 10:38:04.487 | 156060 | [http-nio-8080-exec-6] | ERROR | com.order.service.LoggerService - Error detail: Error system Email sendjava.lang.NullPointerException: Cannot invoke "com.order.model.User.getEmail()" because the return value of "com.order.service.dto.ControllerDto.getUser()" is null                                                            
+06-12-2022 10:38:04.487 | 156060 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 10:38:04.487 | 156060 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - ********************* ORDER CREATE SUCESS DETAIL ****************************************
+06-12-2022 10:38:04.487 | 156060 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - Order number: 1                                                   
+06-12-2022 10:38:04.489 | 156062 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - Order Date: 6 de dez. de 2022 10:38:04                          
+06-12-2022 10:38:04.489 | 156062 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 10:38:04.489 | 156062 | [http-nio-8080-exec-6] | ERROR | com.order.service.LoggerService - Error detail: Error system Order java.lang.NullPointerException: Cannot invoke "com.order.model.User.getName()" because the return value of "com.order.service.dto.ControllerDto.getUser()" is null                                                            
+06-12-2022 10:38:04.490 | 156063 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 10:38:37.805 | 189378 | [http-nio-8080-exec-8] | INFO  | c.order.controller.UserController - User found  sucess
+06-12-2022 10:38:44.182 | 195755 | [http-nio-8080-exec-10] | INFO  | c.order.controller.ItemController - Items found  sucess
+06-12-2022 10:38:49.074 | 200647 | [http-nio-8080-exec-9] | INFO  | c.order.controller.UserController - User found  sucess
+06-12-2022 10:44:03.395 | 942  | [restartedMain] | INFO  | com.order.OrderManagerApplication - Starting OrderManagerApplication using Java 17.0.4.1 with PID 10469 (/home/luisnovaes/Área de Trabalho/springtoo/order-manager/target/classes started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+06-12-2022 10:44:03.398 | 945  | [restartedMain] | INFO  | com.order.OrderManagerApplication - No active profile set, falling back to 1 default profile: "default"
+06-12-2022 10:44:08.403 | 5950 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Started OrderManagerApplication in 5.4 seconds (process running for 7.171)
+06-12-2022 10:44:08.408 | 5955 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 10:44:08.408 | 5955 | [restartedMain] | INFO  | com.order.OrderManagerApplication - ORDER MANAGER SYSTEM - LUIS MAGNO NOVAES - rel:1.0 - 12/2022
+06-12-2022 10:44:08.408 | 5955 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 10:44:25.674 | 23221 | [http-nio-8080-exec-1] | INFO  | c.order.controller.ItemController - Item create sucess
+06-12-2022 10:44:29.453 | 27000 | [http-nio-8080-exec-4] | INFO  | c.order.controller.UserController - User create sucess
+06-12-2022 10:44:38.051 | 35598 | [http-nio-8080-exec-3] | INFO  | c.o.c.StockMovementController - StockMovement create sucess
+06-12-2022 10:45:19.722 | 77269 | [http-nio-8080-exec-5] | INFO  | c.order.controller.UserController - Update user sucess
+06-12-2022 10:45:28.150 | 85697 | [http-nio-8080-exec-6] | INFO  | c.order.controller.UserController - User found  sucess
+06-12-2022 10:45:33.936 | 91483 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 10:45:33.936 | 91483 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+06-12-2022 10:45:33.936 | 91483 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 10:45:36.467 | 94014 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - ********************* ORDER CREATE SUCESS DETAIL ****************************************
+06-12-2022 10:45:36.468 | 94015 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Order number: 1                                                   
+06-12-2022 10:45:36.469 | 94016 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Order Date: 6 de dez. de 2022 10:45:33                          
+06-12-2022 10:45:36.469 | 94016 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+06-12-2022 10:45:36.469 | 94016 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Order Item: Keyboard                                         
+06-12-2022 10:45:36.469 | 94016 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+06-12-2022 10:45:36.469 | 94016 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Order The amount: 3                                          
+06-12-2022 10:45:36.469 | 94016 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 10:45:36.469 | 94016 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - ********************* STOCK MOVEMENT DETAIL *******************************
+06-12-2022 10:45:36.469 | 94016 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Stock movement number: 1                                            
+06-12-2022 10:45:36.470 | 94017 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Stock movement Date: Tue Dec 06 10:45:33 WET 2022                                    
+06-12-2022 10:45:36.470 | 94017 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Stock movement Order Number: 1                                  
+06-12-2022 10:45:36.470 | 94017 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Stock movement Situation: SUCCESS_COMPLETED                                  
+06-12-2022 10:45:36.470 | 94017 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 10:45:36.470 | 94017 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - ********************* EMAIL SEND SUCESS ******************************************
+06-12-2022 10:45:36.470 | 94017 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Email: luismagnovaes@gmail.com                                            
+06-12-2022 10:45:36.470 | 94017 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 10:45:51.086 | 108633 | [http-nio-8080-exec-8] | INFO  | c.order.controller.OrderController - Orders found  sucess
+06-12-2022 10:47:53.369 | 230916 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 10:47:53.369 | 230916 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+06-12-2022 10:47:53.369 | 230916 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 10:47:55.124 | 232671 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ********************* ORDER CREATE SUCESS DETAIL ****************************************
+06-12-2022 10:47:55.125 | 232672 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Order number: 2                                                   
+06-12-2022 10:47:55.126 | 232673 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Order Date: 6 de dez. de 2022 10:47:53                          
+06-12-2022 10:47:55.127 | 232674 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+06-12-2022 10:47:55.127 | 232674 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Order Item: Keyboard                                         
+06-12-2022 10:47:55.127 | 232674 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+06-12-2022 10:47:55.127 | 232674 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Order The amount: 3                                          
+06-12-2022 10:47:55.127 | 232674 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 10:47:55.127 | 232674 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ********************* STOCK MOVEMENT DETAIL *******************************
+06-12-2022 10:47:55.127 | 232674 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Stock movement number: 2                                            
+06-12-2022 10:47:55.128 | 232675 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Stock movement Date: Tue Dec 06 10:47:53 WET 2022                                    
+06-12-2022 10:47:55.128 | 232675 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Stock movement Order Number: 2                                  
+06-12-2022 10:47:55.128 | 232675 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Stock movement Situation: SUCCESS_COMPLETED                                  
+06-12-2022 10:47:55.128 | 232675 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 10:47:55.128 | 232675 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ********************* EMAIL SEND SUCESS ******************************************
+06-12-2022 10:47:55.128 | 232675 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - Email: luismagnovaes@gmail.com                                            
+06-12-2022 10:47:55.129 | 232676 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 10:47:59.896 | 237443 | [http-nio-8080-exec-1] | INFO  | c.order.controller.OrderController - Orders found  sucess
+06-12-2022 10:48:29.687 | 267234 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 10:48:29.690 | 267237 | [http-nio-8080-exec-4] | ERROR | com.order.service.LoggerService - Error detail: Error of system Order org.springframework.dao.InvalidDataAccessApiUsageException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call                                                            
+06-12-2022 10:48:29.694 | 267241 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 10:48:29.957 | 267504 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 10:48:29.959 | 267506 | [http-nio-8080-exec-4] | ERROR | com.order.service.LoggerService - Error detail: Error system Order org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [fk28vtv5h6iek3h0cuv9d0uj2or]                                                            
+06-12-2022 10:48:29.962 | 267509 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 10:51:11.059 | 428606 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Starting OrderManagerApplication using Java 17.0.4.1 with PID 10469 (/home/luisnovaes/Área de Trabalho/springtoo/order-manager/target/classes started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+06-12-2022 10:51:11.060 | 428607 | [restartedMain] | INFO  | com.order.OrderManagerApplication - No active profile set, falling back to 1 default profile: "default"
+06-12-2022 10:51:12.797 | 430344 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Started OrderManagerApplication in 1.783 seconds (process running for 431.564)
+06-12-2022 10:51:12.800 | 430347 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 10:51:12.800 | 430347 | [restartedMain] | INFO  | com.order.OrderManagerApplication - ORDER MANAGER SYSTEM - LUIS MAGNO NOVAES - rel:1.0 - 12/2022
+06-12-2022 10:51:12.800 | 430347 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 10:51:25.421 | 442968 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Starting OrderManagerApplication using Java 17.0.4.1 with PID 10469 (/home/luisnovaes/Área de Trabalho/springtoo/order-manager/target/classes started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+06-12-2022 10:51:25.421 | 442968 | [restartedMain] | INFO  | com.order.OrderManagerApplication - No active profile set, falling back to 1 default profile: "default"
+06-12-2022 10:51:26.744 | 444291 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Started OrderManagerApplication in 1.362 seconds (process running for 445.512)
+06-12-2022 10:51:26.750 | 444297 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 10:51:26.750 | 444297 | [restartedMain] | INFO  | com.order.OrderManagerApplication - ORDER MANAGER SYSTEM - LUIS MAGNO NOVAES - rel:1.0 - 12/2022
+06-12-2022 10:51:26.750 | 444297 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 10:51:33.445 | 450992 | [http-nio-8080-exec-2] | INFO  | c.order.controller.ItemController - Item create sucess
+06-12-2022 10:51:36.685 | 454232 | [http-nio-8080-exec-3] | INFO  | c.order.controller.UserController - User create sucess
+06-12-2022 10:51:44.343 | 461890 | [http-nio-8080-exec-4] | INFO  | c.o.c.StockMovementController - StockMovement create sucess
+06-12-2022 10:51:55.420 | 472967 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 10:51:55.420 | 472967 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+06-12-2022 10:51:55.420 | 472967 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 10:51:55.467 | 473014 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 10:51:55.467 | 473014 | [http-nio-8080-exec-5] | ERROR | com.order.service.LoggerService - Error detail: Error system Email sendjava.lang.NullPointerException: Cannot invoke "com.order.model.User.getEmail()" because the return value of "com.order.service.dto.ControllerDto.getUser()" is null                                                            
+06-12-2022 10:51:55.467 | 473014 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 10:51:55.467 | 473014 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ********************* ORDER CREATE SUCESS DETAIL ****************************************
+06-12-2022 10:51:55.468 | 473015 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - Order number: 1                                                   
+06-12-2022 10:51:55.468 | 473015 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - Order Date: 6 de dez. de 2022 10:51:55                          
+06-12-2022 10:51:55.468 | 473015 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 10:51:55.468 | 473015 | [http-nio-8080-exec-5] | ERROR | com.order.service.LoggerService - Error detail: Error system Order java.lang.NullPointerException: Cannot invoke "com.order.model.User.getName()" because the return value of "com.order.service.dto.ControllerDto.getUser()" is null                                                            
+06-12-2022 10:51:55.468 | 473015 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 10:52:19.806 | 497353 | [http-nio-8080-exec-8] | INFO  | c.order.controller.UserController - Update user sucess
+06-12-2022 10:52:30.974 | 508521 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 10:52:30.974 | 508521 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+06-12-2022 10:52:30.974 | 508521 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 10:52:32.525 | 510072 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - ********************* ORDER CREATE SUCESS DETAIL ****************************************
+06-12-2022 10:52:32.525 | 510072 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - Order number: 2                                                   
+06-12-2022 10:52:32.526 | 510073 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - Order Date: 6 de dez. de 2022 10:52:31                          
+06-12-2022 10:52:32.526 | 510073 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+06-12-2022 10:52:32.526 | 510073 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - Order Item: Keyboard                                         
+06-12-2022 10:52:32.526 | 510073 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+06-12-2022 10:52:32.527 | 510074 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - Order The amount: 3                                          
+06-12-2022 10:52:32.527 | 510074 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 10:52:32.527 | 510074 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - ********************* STOCK MOVEMENT DETAIL *******************************
+06-12-2022 10:52:32.527 | 510074 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - Stock movement number: 2                                            
+06-12-2022 10:52:32.527 | 510074 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - Stock movement Date: Tue Dec 06 10:52:31 WET 2022                                    
+06-12-2022 10:52:32.528 | 510075 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - Stock movement Order Number: 2                                  
+06-12-2022 10:52:32.528 | 510075 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - Stock movement Situation: SUCCESS_COMPLETED                                  
+06-12-2022 10:52:32.528 | 510075 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 10:52:32.528 | 510075 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - ********************* EMAIL SEND SUCESS ******************************************
+06-12-2022 10:52:32.528 | 510075 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - Email: luismagnovaes@gmail.com                                            
+06-12-2022 10:52:32.528 | 510075 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 10:52:41.824 | 519371 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 10:52:41.824 | 519371 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+06-12-2022 10:52:41.824 | 519371 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 10:52:41.842 | 519389 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - ********************* ERROR CREATE ORDER ******************************************
+06-12-2022 10:52:41.843 | 519390 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - Detail:Insufficient item.                                                               
+06-12-2022 10:52:41.843 | 519390 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 10:52:41.843 | 519390 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - *************STOCK MOVEMENT ITEM SITUATION*********************************************
+06-12-2022 10:52:41.843 | 519390 | [http-nio-8080-exec-9] | ERROR | com.order.service.LoggerService - Stock movemet date: 2022-12-06 10:52:30.988                                            
+06-12-2022 10:52:41.843 | 519390 | [http-nio-8080-exec-9] | ERROR | com.order.service.LoggerService - Stock movemet id : 1                                            
+06-12-2022 10:52:41.843 | 519390 | [http-nio-8080-exec-9] | ERROR | com.order.service.LoggerService - Stock movemet name : Keyboard                                            
+06-12-2022 10:52:41.843 | 519390 | [http-nio-8080-exec-9] | ERROR | com.order.service.LoggerService - Stock movemet The amount: 0                                            
+06-12-2022 10:52:41.843 | 519390 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - **************************************************************************************
+06-12-2022 10:52:41.843 | 519390 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 10:52:41.843 | 519390 | [http-nio-8080-exec-9] | ERROR | com.order.service.LoggerService - Error detail: Erro operation create order : STOCK_MOVEMENT_INSUFFICIENT_ITEM                                                            
+06-12-2022 10:52:41.843 | 519390 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 10:52:52.027 | 529574 | [http-nio-8080-exec-1] | INFO  | c.order.controller.OrderController - Orders found  sucess
+06-12-2022 10:53:02.891 | 540438 | [http-nio-8080-exec-2] | INFO  | c.o.c.StockMovementController - StockMovements found  sucess
+06-12-2022 10:53:10.608 | 548155 | [http-nio-8080-exec-3] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 10:53:10.608 | 548155 | [http-nio-8080-exec-3] | ERROR | com.order.service.LoggerService - Error detail: Update stockMovement error: Not found                                                            
+06-12-2022 10:53:10.608 | 548155 | [http-nio-8080-exec-3] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 10:53:18.532 | 556079 | [http-nio-8080-exec-4] | INFO  | c.o.c.StockMovementController - StockMovements found  sucess
+06-12-2022 10:53:36.921 | 574468 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 10:53:36.921 | 574468 | [http-nio-8080-exec-5] | ERROR | com.order.service.LoggerService - Error detail: Update stockMovement error: Not found                                                            
+06-12-2022 10:53:36.921 | 574468 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 10:53:52.804 | 590351 | [http-nio-8080-exec-7] | INFO  | c.o.c.StockMovementController - Update stockMovement sucess
+06-12-2022 10:54:00.271 | 597818 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 10:54:00.272 | 597819 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+06-12-2022 10:54:00.272 | 597819 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 10:54:02.223 | 599770 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - ********************* ORDER CREATE SUCESS DETAIL ****************************************
+06-12-2022 10:54:02.224 | 599771 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - Order number: 3                                                   
+06-12-2022 10:54:02.225 | 599772 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - Order Date: 6 de dez. de 2022 10:54:00                          
+06-12-2022 10:54:02.225 | 599772 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+06-12-2022 10:54:02.226 | 599773 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - Order Item: Keyboard                                         
+06-12-2022 10:54:02.226 | 599773 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+06-12-2022 10:54:02.226 | 599773 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - Order The amount: 3                                          
+06-12-2022 10:54:02.226 | 599773 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 10:54:02.226 | 599773 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - ********************* STOCK MOVEMENT DETAIL *******************************
+06-12-2022 10:54:02.226 | 599773 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - Stock movement number: 4                                            
+06-12-2022 10:54:02.226 | 599773 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - Stock movement Date: Tue Dec 06 10:54:00 WET 2022                                    
+06-12-2022 10:54:02.226 | 599773 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - Stock movement Order Number: 3                                  
+06-12-2022 10:54:02.227 | 599774 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - Stock movement Situation: SUCCESS_COMPLETED                                  
+06-12-2022 10:54:02.227 | 599774 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 10:54:02.227 | 599774 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - ********************* EMAIL SEND SUCESS ******************************************
+06-12-2022 10:54:02.229 | 599776 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - Email: luismagnovaes@gmail.com                                            
+06-12-2022 10:54:02.230 | 599777 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 10:54:28.739 | 626286 | [http-nio-8080-exec-6] | INFO  | c.order.controller.OrderController - Orders found  sucess
+06-12-2022 10:54:41.714 | 639261 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 10:54:41.720 | 639267 | [http-nio-8080-exec-9] | ERROR | com.order.service.LoggerService - Error detail: Error of system Order org.springframework.dao.InvalidDataAccessApiUsageException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call                                                            
+06-12-2022 10:54:41.730 | 639277 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 10:54:57.640 | 655187 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 10:54:57.649 | 655196 | [http-nio-8080-exec-9] | ERROR | com.order.service.LoggerService - Error detail: Error system Order org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [fk28vtv5h6iek3h0cuv9d0uj2or]                                                            
+06-12-2022 10:54:57.659 | 655206 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 10:55:11.965 | 669512 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Starting OrderManagerApplication using Java 17.0.4.1 with PID 10469 (/home/luisnovaes/Área de Trabalho/springtoo/order-manager/target/classes started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+06-12-2022 10:55:11.965 | 669512 | [restartedMain] | INFO  | com.order.OrderManagerApplication - No active profile set, falling back to 1 default profile: "default"
+06-12-2022 10:55:12.856 | 670403 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Started OrderManagerApplication in 0.929 seconds (process running for 671.624)
+06-12-2022 10:55:12.859 | 670406 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 10:55:12.860 | 670407 | [restartedMain] | INFO  | com.order.OrderManagerApplication - ORDER MANAGER SYSTEM - LUIS MAGNO NOVAES - rel:1.0 - 12/2022
+06-12-2022 10:55:12.860 | 670407 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 10:55:51.519 | 709066 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Starting OrderManagerApplication using Java 17.0.4.1 with PID 10469 (/home/luisnovaes/Área de Trabalho/springtoo/order-manager/target/classes started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+06-12-2022 10:55:51.519 | 709066 | [restartedMain] | INFO  | com.order.OrderManagerApplication - No active profile set, falling back to 1 default profile: "default"
+06-12-2022 10:55:52.317 | 709864 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Started OrderManagerApplication in 0.835 seconds (process running for 711.085)
+06-12-2022 10:55:52.320 | 709867 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 10:55:52.320 | 709867 | [restartedMain] | INFO  | com.order.OrderManagerApplication - ORDER MANAGER SYSTEM - LUIS MAGNO NOVAES - rel:1.0 - 12/2022
+06-12-2022 10:55:52.320 | 709867 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 10:56:05.231 | 722778 | [http-nio-8080-exec-2] | INFO  | c.order.controller.ItemController - Item create sucess
+06-12-2022 10:56:08.307 | 725854 | [http-nio-8080-exec-3] | INFO  | c.order.controller.UserController - User create sucess
+06-12-2022 10:56:11.911 | 729458 | [http-nio-8080-exec-4] | INFO  | c.o.c.StockMovementController - StockMovement create sucess
+06-12-2022 10:56:19.987 | 737534 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 10:56:19.987 | 737534 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+06-12-2022 10:56:19.987 | 737534 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 10:56:20.023 | 737570 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 10:56:20.024 | 737571 | [http-nio-8080-exec-5] | ERROR | com.order.service.LoggerService - Error detail: Error system Email sendjava.lang.NullPointerException: Cannot invoke "com.order.model.User.getEmail()" because the return value of "com.order.service.dto.ControllerDto.getUser()" is null                                                            
+06-12-2022 10:56:20.024 | 737571 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 10:56:20.024 | 737571 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ********************* ORDER CREATE SUCESS DETAIL ****************************************
+06-12-2022 10:56:20.025 | 737572 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - Order number: 1                                                   
+06-12-2022 10:56:20.026 | 737573 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - Order Date: 6 de dez. de 2022 10:56:20                          
+06-12-2022 10:56:20.027 | 737574 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 10:56:20.027 | 737574 | [http-nio-8080-exec-5] | ERROR | com.order.service.LoggerService - Error detail: Error system Order java.lang.NullPointerException: Cannot invoke "com.order.model.User.getName()" because the return value of "com.order.service.dto.ControllerDto.getUser()" is null                                                            
+06-12-2022 10:56:20.027 | 737574 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 10:56:36.810 | 754357 | [http-nio-8080-exec-7] | INFO  | c.order.controller.UserController - Update user sucess
+06-12-2022 10:56:42.317 | 759864 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 10:56:42.317 | 759864 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+06-12-2022 10:56:42.317 | 759864 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 10:56:44.119 | 761666 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - ********************* ORDER CREATE SUCESS DETAIL ****************************************
+06-12-2022 10:56:44.119 | 761666 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - Order number: 2                                                   
+06-12-2022 10:56:44.120 | 761667 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - Order Date: 6 de dez. de 2022 10:56:42                          
+06-12-2022 10:56:44.120 | 761667 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+06-12-2022 10:56:44.120 | 761667 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - Order Item: Keyboard                                         
+06-12-2022 10:56:44.120 | 761667 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+06-12-2022 10:56:44.120 | 761667 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - Order The amount: 3                                          
+06-12-2022 10:56:44.121 | 761668 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 10:56:44.121 | 761668 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - ********************* STOCK MOVEMENT DETAIL *******************************
+06-12-2022 10:56:44.121 | 761668 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - Stock movement number: 2                                            
+06-12-2022 10:56:44.121 | 761668 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - Stock movement Date: Tue Dec 06 10:56:42 WET 2022                                    
+06-12-2022 10:56:44.121 | 761668 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - Stock movement Order Number: 2                                  
+06-12-2022 10:56:44.121 | 761668 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - Stock movement Situation: SUCCESS_COMPLETED                                  
+06-12-2022 10:56:44.121 | 761668 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 10:56:44.122 | 761669 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - ********************* EMAIL SEND SUCESS ******************************************
+06-12-2022 10:56:44.123 | 761670 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - Email: luismagnovaes@gmail.com                                            
+06-12-2022 10:56:44.123 | 761670 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 10:56:51.674 | 769221 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 10:56:51.675 | 769222 | [http-nio-8080-exec-9] | ERROR | com.order.service.LoggerService - Error detail: Error of system Order org.springframework.dao.InvalidDataAccessApiUsageException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call                                                            
+06-12-2022 10:56:51.675 | 769222 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 10:56:51.685 | 769232 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 10:56:51.685 | 769232 | [http-nio-8080-exec-9] | ERROR | com.order.service.LoggerService - Error detail: There is a RegistStockMoviment associate!                                                            
+06-12-2022 10:56:51.685 | 769232 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 10:58:21.430 | 858977 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Starting OrderManagerApplication using Java 17.0.4.1 with PID 10469 (/home/luisnovaes/Área de Trabalho/springtoo/order-manager/target/classes started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+06-12-2022 10:58:21.430 | 858977 | [restartedMain] | INFO  | com.order.OrderManagerApplication - No active profile set, falling back to 1 default profile: "default"
+06-12-2022 10:58:22.553 | 860100 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Started OrderManagerApplication in 1.188 seconds (process running for 861.32)
+06-12-2022 10:58:22.555 | 860102 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 10:58:22.555 | 860102 | [restartedMain] | INFO  | com.order.OrderManagerApplication - ORDER MANAGER SYSTEM - LUIS MAGNO NOVAES - rel:1.0 - 12/2022
+06-12-2022 10:58:22.555 | 860102 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 10:58:25.533 | 863080 | [http-nio-8080-exec-3] | INFO  | c.order.controller.ItemController - Item create sucess
+06-12-2022 10:58:29.988 | 867535 | [http-nio-8080-exec-4] | INFO  | c.order.controller.UserController - User create sucess
+06-12-2022 10:58:44.995 | 882542 | [http-nio-8080-exec-2] | INFO  | c.order.controller.UserController - Update user sucess
+06-12-2022 10:58:49.558 | 887105 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 10:58:49.558 | 887105 | [http-nio-8080-exec-5] | ERROR | com.order.service.LoggerService - Error detail: StockMovements not found                                                            
+06-12-2022 10:58:49.558 | 887105 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 10:58:58.872 | 896419 | [http-nio-8080-exec-6] | INFO  | c.o.c.StockMovementController - StockMovement create sucess
+06-12-2022 10:59:06.646 | 904193 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 10:59:06.646 | 904193 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+06-12-2022 10:59:06.646 | 904193 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 10:59:08.615 | 906162 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - ********************* ORDER CREATE SUCESS DETAIL ****************************************
+06-12-2022 10:59:08.616 | 906163 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Order number: 1                                                   
+06-12-2022 10:59:08.617 | 906164 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Order Date: 6 de dez. de 2022 10:59:06                          
+06-12-2022 10:59:08.617 | 906164 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+06-12-2022 10:59:08.618 | 906165 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Order Item: Keyboard                                         
+06-12-2022 10:59:08.618 | 906165 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+06-12-2022 10:59:08.618 | 906165 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Order The amount: 3                                          
+06-12-2022 10:59:08.618 | 906165 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 10:59:08.618 | 906165 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - ********************* STOCK MOVEMENT DETAIL *******************************
+06-12-2022 10:59:08.619 | 906166 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Stock movement number: 1                                            
+06-12-2022 10:59:08.620 | 906167 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Stock movement Date: Tue Dec 06 10:59:06 WET 2022                                    
+06-12-2022 10:59:08.620 | 906167 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Stock movement Order Number: 1                                  
+06-12-2022 10:59:08.620 | 906167 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Stock movement Situation: SUCCESS_COMPLETED                                  
+06-12-2022 10:59:08.620 | 906167 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 10:59:08.620 | 906167 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - ********************* EMAIL SEND SUCESS ******************************************
+06-12-2022 10:59:08.621 | 906168 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Email: luismagnovaes@gmail.com                                            
+06-12-2022 10:59:08.621 | 906168 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 10:59:13.903 | 911450 | [http-nio-8080-exec-8] | INFO  | c.o.c.StockMovementController - StockMovements found  sucess
+06-12-2022 10:59:19.007 | 916554 | [http-nio-8080-exec-9] | INFO  | c.o.c.StockMovementController - StockMovemen found  sucess
+06-12-2022 10:59:25.275 | 922822 | [http-nio-8080-exec-10] | INFO  | c.order.controller.OrderController - Orders found  sucess
+06-12-2022 10:59:32.690 | 930237 | [http-nio-8080-exec-1] | INFO  | c.order.controller.OrderController - Order find  sucess
+06-12-2022 10:59:47.146 | 944693 | [http-nio-8080-exec-3] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 10:59:47.146 | 944693 | [http-nio-8080-exec-3] | ERROR | com.order.service.LoggerService - Error detail: Error of system Order org.springframework.dao.InvalidDataAccessApiUsageException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call                                                            
+06-12-2022 10:59:47.146 | 944693 | [http-nio-8080-exec-3] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 10:59:47.159 | 944706 | [http-nio-8080-exec-3] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 10:59:47.159 | 944706 | [http-nio-8080-exec-3] | ERROR | com.order.service.LoggerService - Error detail: There is a RegistStockMoviment associate!                                                            
+06-12-2022 10:59:47.159 | 944706 | [http-nio-8080-exec-3] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:01:00.074 | 998  | [restartedMain] | INFO  | com.order.OrderManagerApplication - Starting OrderManagerApplication using Java 17.0.4.1 with PID 11960 (/home/luisnovaes/Área de Trabalho/springtoo/order-manager/target/classes started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+06-12-2022 11:01:00.076 | 1000 | [restartedMain] | INFO  | com.order.OrderManagerApplication - No active profile set, falling back to 1 default profile: "default"
+06-12-2022 11:01:04.432 | 5356 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Started OrderManagerApplication in 4.776 seconds (process running for 6.173)
+06-12-2022 11:01:04.436 | 5360 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 11:01:04.436 | 5360 | [restartedMain] | INFO  | com.order.OrderManagerApplication - ORDER MANAGER SYSTEM - LUIS MAGNO NOVAES - rel:1.0 - 12/2022
+06-12-2022 11:01:04.436 | 5360 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 11:01:23.955 | 24879 | [http-nio-8080-exec-6] | INFO  | c.order.controller.ItemController - Item create sucess
+06-12-2022 11:13:06.582 | 727506 | [http-nio-8080-exec-9] | INFO  | c.o.c.StockMovementController - StockMovement create sucess
+06-12-2022 11:13:17.487 | 738411 | [http-nio-8080-exec-10] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:13:17.488 | 738412 | [http-nio-8080-exec-10] | ERROR | com.order.service.LoggerService - Error detail: Users not found                                                            
+06-12-2022 11:13:17.488 | 738412 | [http-nio-8080-exec-10] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:13:38.595 | 759519 | [http-nio-8080-exec-1] | INFO  | c.order.controller.UserController - User create sucess
+06-12-2022 11:13:43.573 | 764497 | [http-nio-8080-exec-2] | INFO  | c.order.controller.ItemController - Item create sucess
+06-12-2022 11:13:47.084 | 768008 | [http-nio-8080-exec-3] | INFO  | c.order.controller.UserController - User create sucess
+06-12-2022 11:14:04.737 | 785661 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:14:04.737 | 785661 | [http-nio-8080-exec-4] | ERROR | com.order.service.LoggerService - Error detail: Error delete stockMovementorg.springframework.dao.EmptyResultDataAccessException: No class com.order.model.StockMovement entity with id 2 exists                                                            
+06-12-2022 11:14:04.737 | 785661 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:14:22.676 | 803600 | [http-nio-8080-exec-6] | WARN  | c.order.controller.OrderController - Orders not found
+06-12-2022 11:14:26.979 | 807903 | [http-nio-8080-exec-7] | WARN  | c.order.controller.OrderController - Orders not found
+06-12-2022 11:14:39.493 | 820417 | [http-nio-8080-exec-8] | INFO  | c.o.c.StockMovementController - StockMovements found  sucess
+06-12-2022 11:14:53.271 | 834195 | [http-nio-8080-exec-9] | INFO  | c.o.c.StockMovementController - StockMovements found  sucess
+06-12-2022 11:14:59.631 | 840555 | [http-nio-8080-exec-10] | INFO  | c.order.controller.UserController - User found  sucess
+06-12-2022 11:15:09.921 | 850845 | [http-nio-8080-exec-1] | INFO  | c.order.controller.UserController - user ID 2 Deleted user Sucess
+06-12-2022 11:15:14.723 | 855647 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:15:14.723 | 855647 | [http-nio-8080-exec-2] | ERROR | com.order.service.LoggerService - Error detail: User not found                                                            
+06-12-2022 11:15:14.723 | 855647 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:15:25.606 | 866530 | [http-nio-8080-exec-3] | INFO  | c.o.c.StockMovementController - StockMovements found  sucess
+06-12-2022 11:15:31.058 | 871982 | [http-nio-8080-exec-4] | WARN  | c.order.controller.OrderController - Orders not found
+06-12-2022 11:15:38.121 | 879045 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 11:15:38.121 | 879045 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+06-12-2022 11:15:38.121 | 879045 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 11:15:38.141 | 879065 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:15:38.141 | 879065 | [http-nio-8080-exec-5] | ERROR | com.order.service.LoggerService - Error detail: Error system serviceorg.springframework.dao.IncorrectResultSizeDataAccessException: query did not return a unique result: 2                                                            
+06-12-2022 11:15:38.141 | 879065 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:15:38.141 | 879065 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:15:38.141 | 879065 | [http-nio-8080-exec-5] | ERROR | com.order.service.LoggerService - Error detail: Error system service buildOrder null!                                                            
+06-12-2022 11:15:38.141 | 879065 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:15:38.141 | 879065 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:15:38.141 | 879065 | [http-nio-8080-exec-5] | ERROR | com.order.service.LoggerService - Error detail: Erro operation create order : STOCK_MOVEMENT_INSUFFICIENT_ITEM                                                            
+06-12-2022 11:15:38.142 | 879066 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:15:49.141 | 890065 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:15:49.142 | 890066 | [http-nio-8080-exec-7] | ERROR | com.order.service.LoggerService - Error detail: Error system stockMovement org.springframework.dao.IncorrectResultSizeDataAccessException: query did not return a unique result: 2                                                            
+06-12-2022 11:15:49.142 | 890066 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:15:52.723 | 893647 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 11:15:52.723 | 893647 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+06-12-2022 11:15:52.723 | 893647 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 11:15:52.728 | 893652 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:15:52.728 | 893652 | [http-nio-8080-exec-8] | ERROR | com.order.service.LoggerService - Error detail: Error system serviceorg.springframework.dao.IncorrectResultSizeDataAccessException: query did not return a unique result: 2                                                            
+06-12-2022 11:15:52.728 | 893652 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:15:52.728 | 893652 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:15:52.728 | 893652 | [http-nio-8080-exec-8] | ERROR | com.order.service.LoggerService - Error detail: Error system service buildOrder null!                                                            
+06-12-2022 11:15:52.728 | 893652 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:15:52.728 | 893652 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:15:52.728 | 893652 | [http-nio-8080-exec-8] | ERROR | com.order.service.LoggerService - Error detail: Erro operation create order : STOCK_MOVEMENT_INSUFFICIENT_ITEM                                                            
+06-12-2022 11:15:52.728 | 893652 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:16:01.714 | 902638 | [http-nio-8080-exec-10] | INFO  | c.o.c.StockMovementController - StockMovements found  sucess
+06-12-2022 11:16:07.978 | 908902 | [http-nio-8080-exec-1] | INFO  | c.o.c.StockMovementController - StockMovements found  sucess
+06-12-2022 11:16:29.735 | 930659 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 11:16:29.735 | 930659 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+06-12-2022 11:16:29.735 | 930659 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 11:16:29.740 | 930664 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:16:29.740 | 930664 | [http-nio-8080-exec-2] | ERROR | com.order.service.LoggerService - Error detail: Error system serviceorg.springframework.dao.IncorrectResultSizeDataAccessException: query did not return a unique result: 2                                                            
+06-12-2022 11:16:29.740 | 930664 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:16:29.741 | 930665 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:16:29.741 | 930665 | [http-nio-8080-exec-2] | ERROR | com.order.service.LoggerService - Error detail: Error system service buildOrder null!                                                            
+06-12-2022 11:16:29.741 | 930665 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:16:29.741 | 930665 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:16:29.742 | 930666 | [http-nio-8080-exec-2] | ERROR | com.order.service.LoggerService - Error detail: Erro operation create order : STOCK_MOVEMENT_INSUFFICIENT_ITEM                                                            
+06-12-2022 11:16:29.742 | 930666 | [http-nio-8080-exec-2] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:16:42.421 | 943345 | [http-nio-8080-exec-4] | INFO  | c.o.c.StockMovementController - StockMovements found  sucess
+06-12-2022 11:17:05.607 | 966531 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 11:17:05.607 | 966531 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+06-12-2022 11:17:05.607 | 966531 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 11:17:05.612 | 966536 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:17:05.612 | 966536 | [http-nio-8080-exec-5] | ERROR | com.order.service.LoggerService - Error detail: Error system serviceorg.springframework.dao.IncorrectResultSizeDataAccessException: query did not return a unique result: 2                                                            
+06-12-2022 11:17:05.612 | 966536 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:17:05.612 | 966536 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:17:05.612 | 966536 | [http-nio-8080-exec-5] | ERROR | com.order.service.LoggerService - Error detail: Error system service buildOrder null!                                                            
+06-12-2022 11:17:05.612 | 966536 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:17:05.612 | 966536 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:17:05.612 | 966536 | [http-nio-8080-exec-5] | ERROR | com.order.service.LoggerService - Error detail: Erro operation create order : STOCK_MOVEMENT_INSUFFICIENT_ITEM                                                            
+06-12-2022 11:17:05.612 | 966536 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:17:18.788 | 979712 | [http-nio-8080-exec-7] | INFO  | c.o.c.StockMovementController - StockMovements found  sucess
+06-12-2022 11:17:29.673 | 990597 | [http-nio-8080-exec-8] | INFO  | c.o.c.StockMovementController - All stockMovement Deleteds Sucess 
+06-12-2022 11:17:43.571 | 1004495 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:17:43.572 | 1004496 | [http-nio-8080-exec-9] | ERROR | com.order.service.LoggerService - Error detail: Error system stockMovement org.springframework.dao.IncorrectResultSizeDataAccessException: query did not return a unique result: 2                                                            
+06-12-2022 11:17:43.572 | 1004496 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:18:12.651 | 1033575 | [http-nio-8080-exec-1] | INFO  | c.order.controller.ItemController - Items found  sucess
+06-12-2022 11:18:23.465 | 1044389 | [http-nio-8080-exec-2] | INFO  | c.order.controller.ItemController - Item ID 2 Deleted Sucess
+06-12-2022 11:18:38.624 | 1059548 | [http-nio-8080-exec-3] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 11:18:38.624 | 1059548 | [http-nio-8080-exec-3] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+06-12-2022 11:18:38.624 | 1059548 | [http-nio-8080-exec-3] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 11:18:38.652 | 1059576 | [http-nio-8080-exec-3] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:18:38.653 | 1059577 | [http-nio-8080-exec-3] | ERROR | com.order.service.LoggerService - Error detail: Error system servicejava.util.NoSuchElementException: No value present                                                            
+06-12-2022 11:18:38.653 | 1059577 | [http-nio-8080-exec-3] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:18:38.653 | 1059577 | [http-nio-8080-exec-3] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:18:38.653 | 1059577 | [http-nio-8080-exec-3] | ERROR | com.order.service.LoggerService - Error detail: Error system service buildOrder null!                                                            
+06-12-2022 11:18:38.653 | 1059577 | [http-nio-8080-exec-3] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:18:38.653 | 1059577 | [http-nio-8080-exec-3] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:18:38.653 | 1059577 | [http-nio-8080-exec-3] | ERROR | com.order.service.LoggerService - Error detail: Erro operation create order : STOCK_MOVEMENT_INSUFFICIENT_ITEM                                                            
+06-12-2022 11:18:38.653 | 1059577 | [http-nio-8080-exec-3] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:18:45.163 | 1066087 | [http-nio-8080-exec-5] | INFO  | c.o.c.StockMovementController - StockMovement create sucess
+06-12-2022 11:18:48.582 | 1069506 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 11:18:48.582 | 1069506 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+06-12-2022 11:18:48.582 | 1069506 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 11:18:48.603 | 1069527 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:18:48.603 | 1069527 | [http-nio-8080-exec-6] | ERROR | com.order.service.LoggerService - Error detail: Error system servicejava.util.NoSuchElementException: No value present                                                            
+06-12-2022 11:18:48.603 | 1069527 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:18:48.603 | 1069527 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:18:48.603 | 1069527 | [http-nio-8080-exec-6] | ERROR | com.order.service.LoggerService - Error detail: Error system service buildOrder null!                                                            
+06-12-2022 11:18:48.603 | 1069527 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:18:48.603 | 1069527 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:18:48.603 | 1069527 | [http-nio-8080-exec-6] | ERROR | com.order.service.LoggerService - Error detail: Erro operation create order : STOCK_MOVEMENT_INSUFFICIENT_ITEM                                                            
+06-12-2022 11:18:48.603 | 1069527 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:19:01.046 | 1081970 | [http-nio-8080-exec-8] | INFO  | c.o.c.StockMovementController - StockMovements found  sucess
+06-12-2022 11:19:10.351 | 1091275 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 11:19:10.351 | 1091275 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+06-12-2022 11:19:10.351 | 1091275 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 11:19:10.368 | 1091292 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:19:10.368 | 1091292 | [http-nio-8080-exec-9] | ERROR | com.order.service.LoggerService - Error detail: Error system servicejava.util.NoSuchElementException: No value present                                                            
+06-12-2022 11:19:10.368 | 1091292 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:19:10.368 | 1091292 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:19:10.368 | 1091292 | [http-nio-8080-exec-9] | ERROR | com.order.service.LoggerService - Error detail: Error system service buildOrder null!                                                            
+06-12-2022 11:19:10.368 | 1091292 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:19:10.368 | 1091292 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:19:10.368 | 1091292 | [http-nio-8080-exec-9] | ERROR | com.order.service.LoggerService - Error detail: Erro operation create order : STOCK_MOVEMENT_INSUFFICIENT_ITEM                                                            
+06-12-2022 11:19:10.369 | 1091293 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:19:54.120 | 1135044 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Starting OrderManagerApplication using Java 17.0.4.1 with PID 11960 (/home/luisnovaes/Área de Trabalho/springtoo/order-manager/target/classes started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+06-12-2022 11:19:54.121 | 1135045 | [restartedMain] | INFO  | com.order.OrderManagerApplication - No active profile set, falling back to 1 default profile: "default"
+06-12-2022 11:19:56.148 | 1137072 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Started OrderManagerApplication in 2.072 seconds (process running for 1137.888)
+06-12-2022 11:19:56.156 | 1137080 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 11:19:56.156 | 1137080 | [restartedMain] | INFO  | com.order.OrderManagerApplication - ORDER MANAGER SYSTEM - LUIS MAGNO NOVAES - rel:1.0 - 12/2022
+06-12-2022 11:19:56.156 | 1137080 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 11:20:00.509 | 1141433 | [http-nio-8080-exec-1] | INFO  | c.order.controller.ItemController - Item create sucess
+06-12-2022 11:20:05.971 | 1146895 | [http-nio-8080-exec-3] | INFO  | c.order.controller.UserController - User create sucess
+06-12-2022 11:20:12.556 | 1153480 | [http-nio-8080-exec-4] | INFO  | c.o.c.StockMovementController - StockMovement create sucess
+06-12-2022 11:20:16.799 | 1157723 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 11:20:16.799 | 1157723 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+06-12-2022 11:20:16.799 | 1157723 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 11:20:19.629 | 1160553 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ********************* ORDER CREATE SUCESS DETAIL ****************************************
+06-12-2022 11:20:19.630 | 1160554 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - Order number: 1                                                   
+06-12-2022 11:20:19.634 | 1160558 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - Order Date: 6 de dez. de 2022 11:20:16                          
+06-12-2022 11:20:19.634 | 1160558 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+06-12-2022 11:20:19.635 | 1160559 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - Order Item: Keyboard                                         
+06-12-2022 11:20:19.635 | 1160559 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+06-12-2022 11:20:19.635 | 1160559 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - Order The amount: 1                                          
+06-12-2022 11:20:19.635 | 1160559 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 11:20:19.635 | 1160559 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ********************* STOCK MOVEMENT DETAIL *******************************
+06-12-2022 11:20:19.635 | 1160559 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - Stock movement number: 1                                            
+06-12-2022 11:20:19.636 | 1160560 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - Stock movement Date: Tue Dec 06 11:20:16 WET 2022                                    
+06-12-2022 11:20:19.636 | 1160560 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - Stock movement Order Number: 1                                  
+06-12-2022 11:20:19.636 | 1160560 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - Stock movement Situation: SUCCESS_COMPLETED                                  
+06-12-2022 11:20:19.636 | 1160560 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 11:20:19.636 | 1160560 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ********************* EMAIL SEND SUCESS ******************************************
+06-12-2022 11:20:19.636 | 1160560 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - Email: luismagnovaes@gmail.com                                            
+06-12-2022 11:20:19.636 | 1160560 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 11:20:38.696 | 1179620 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:20:38.697 | 1179621 | [http-nio-8080-exec-8] | ERROR | com.order.service.LoggerService - Error detail: Error of system Order org.springframework.dao.InvalidDataAccessApiUsageException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call                                                            
+06-12-2022 11:20:38.698 | 1179622 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:20:38.763 | 1179687 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:20:38.763 | 1179687 | [http-nio-8080-exec-8] | ERROR | com.order.service.LoggerService - Error detail: There is a RegistStockMoviment associate!                                                            
+06-12-2022 11:20:38.763 | 1179687 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:20:48.530 | 1189454 | [http-nio-8080-exec-10] | INFO  | c.order.controller.OrderController - Orders found  sucess
+06-12-2022 11:20:53.636 | 1194560 | [http-nio-8080-exec-2] | INFO  | c.order.controller.OrderController - Order find  sucess
+06-12-2022 11:22:33.614 | 911  | [restartedMain] | INFO  | com.order.OrderManagerApplication - Starting OrderManagerApplication using Java 17.0.4.1 with PID 12920 (/home/luisnovaes/Área de Trabalho/springtoo/order-manager/target/classes started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+06-12-2022 11:22:33.617 | 914  | [restartedMain] | INFO  | com.order.OrderManagerApplication - No active profile set, falling back to 1 default profile: "default"
+06-12-2022 11:22:38.358 | 5655 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Started OrderManagerApplication in 5.101 seconds (process running for 6.471)
+06-12-2022 11:22:38.364 | 5661 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 11:22:38.364 | 5661 | [restartedMain] | INFO  | com.order.OrderManagerApplication - ORDER MANAGER SYSTEM - LUIS MAGNO NOVAES - rel:1.0 - 12/2022
+06-12-2022 11:22:38.364 | 5661 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 11:22:45.977 | 13274 | [http-nio-8080-exec-1] | INFO  | c.order.controller.ItemController - Item create sucess
+06-12-2022 11:22:49.811 | 17108 | [http-nio-8080-exec-3] | INFO  | c.order.controller.UserController - User create sucess
+06-12-2022 11:22:54.616 | 21913 | [http-nio-8080-exec-5] | INFO  | c.o.c.StockMovementController - StockMovement create sucess
+06-12-2022 11:22:57.761 | 25058 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 11:22:57.761 | 25058 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+06-12-2022 11:22:57.761 | 25058 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 11:22:59.780 | 27077 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - ********************* ORDER CREATE SUCESS DETAIL ****************************************
+06-12-2022 11:22:59.782 | 27079 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - Order number: 1                                                   
+06-12-2022 11:22:59.783 | 27080 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - Order Date: 6 de dez. de 2022 11:22:57                          
+06-12-2022 11:22:59.783 | 27080 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+06-12-2022 11:22:59.783 | 27080 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - Order Item: Keyboard                                         
+06-12-2022 11:22:59.783 | 27080 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+06-12-2022 11:22:59.784 | 27081 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - Order The amount: 1                                          
+06-12-2022 11:22:59.784 | 27081 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 11:22:59.784 | 27081 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - ********************* STOCK MOVEMENT DETAIL *******************************
+06-12-2022 11:22:59.784 | 27081 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - Stock movement number: 1                                            
+06-12-2022 11:22:59.785 | 27082 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - Stock movement Date: Tue Dec 06 11:22:57 WET 2022                                    
+06-12-2022 11:22:59.785 | 27082 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - Stock movement Order Number: 1                                  
+06-12-2022 11:22:59.785 | 27082 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - Stock movement Situation: SUCCESS_COMPLETED                                  
+06-12-2022 11:22:59.785 | 27082 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 11:22:59.785 | 27082 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - ********************* EMAIL SEND SUCESS ******************************************
+06-12-2022 11:22:59.785 | 27082 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - Email: luismagnovaes@gmail.com                                            
+06-12-2022 11:22:59.785 | 27082 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 11:23:34.688 | 61985 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:23:34.688 | 61985 | [http-nio-8080-exec-6] | ERROR | com.order.service.LoggerService - Error detail: Error of system Order org.springframework.dao.InvalidDataAccessApiUsageException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call                                                            
+06-12-2022 11:23:34.688 | 61985 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:23:34.725 | 62022 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:23:34.725 | 62022 | [http-nio-8080-exec-6] | ERROR | com.order.service.LoggerService - Error detail: There is a RegistStockMoviment associate!                                                            
+06-12-2022 11:23:34.725 | 62022 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:23:52.054 | 79351 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:23:52.061 | 79358 | [http-nio-8080-exec-8] | ERROR | com.order.service.LoggerService - Error detail: Error of system Order org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null                                                            
+06-12-2022 11:23:52.065 | 79362 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:25:00.057 | 851  | [restartedMain] | INFO  | com.order.OrderManagerApplication - Starting OrderManagerApplication using Java 17.0.4.1 with PID 13107 (/home/luisnovaes/Área de Trabalho/springtoo/order-manager/target/classes started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+06-12-2022 11:25:00.060 | 854  | [restartedMain] | INFO  | com.order.OrderManagerApplication - No active profile set, falling back to 1 default profile: "default"
+06-12-2022 11:25:04.084 | 4878 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Started OrderManagerApplication in 4.4 seconds (process running for 5.661)
+06-12-2022 11:25:04.087 | 4881 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 11:25:04.087 | 4881 | [restartedMain] | INFO  | com.order.OrderManagerApplication - ORDER MANAGER SYSTEM - LUIS MAGNO NOVAES - rel:1.0 - 12/2022
+06-12-2022 11:25:04.087 | 4881 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 11:25:17.470 | 18264 | [http-nio-8080-exec-2] | INFO  | c.order.controller.ItemController - Item create sucess
+06-12-2022 11:25:20.265 | 21059 | [http-nio-8080-exec-3] | INFO  | c.order.controller.UserController - User create sucess
+06-12-2022 11:25:23.386 | 24180 | [http-nio-8080-exec-4] | INFO  | c.o.c.StockMovementController - StockMovement create sucess
+06-12-2022 11:25:25.865 | 26659 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 11:25:25.865 | 26659 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+06-12-2022 11:25:25.865 | 26659 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 11:25:28.063 | 28857 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - ********************* ORDER CREATE SUCESS DETAIL ****************************************
+06-12-2022 11:25:28.065 | 28859 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - Order number: 1                                                   
+06-12-2022 11:25:28.066 | 28860 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - Order Date: 6 de dez. de 2022 11:25:25                          
+06-12-2022 11:25:28.067 | 28861 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+06-12-2022 11:25:28.067 | 28861 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - Order Item: Keyboard                                         
+06-12-2022 11:25:28.067 | 28861 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+06-12-2022 11:25:28.068 | 28862 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - Order The amount: 1                                          
+06-12-2022 11:25:28.068 | 28862 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 11:25:28.068 | 28862 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - ********************* STOCK MOVEMENT DETAIL *******************************
+06-12-2022 11:25:28.068 | 28862 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - Stock movement number: 1                                            
+06-12-2022 11:25:28.068 | 28862 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - Stock movement Date: Tue Dec 06 11:25:25 WET 2022                                    
+06-12-2022 11:25:28.068 | 28862 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - Stock movement Order Number: 1                                  
+06-12-2022 11:25:28.069 | 28863 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - Stock movement Situation: SUCCESS_COMPLETED                                  
+06-12-2022 11:25:28.069 | 28863 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 11:25:28.069 | 28863 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - ********************* EMAIL SEND SUCESS ******************************************
+06-12-2022 11:25:28.069 | 28863 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - Email: luismagnovaes@gmail.com                                            
+06-12-2022 11:25:28.069 | 28863 | [http-nio-8080-exec-6] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 11:25:38.435 | 39229 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:25:38.436 | 39230 | [http-nio-8080-exec-5] | ERROR | com.order.service.LoggerService - Error detail: Error of system Order org.springframework.dao.InvalidDataAccessApiUsageException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call                                                            
+06-12-2022 11:25:38.436 | 39230 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:25:38.475 | 39269 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:25:38.475 | 39269 | [http-nio-8080-exec-5] | ERROR | com.order.service.LoggerService - Error detail: There is a RegistStockMoviment associate!                                                            
+06-12-2022 11:25:38.475 | 39269 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:26:02.420 | 63214 | [http-nio-8080-exec-7] | INFO  | c.order.controller.OrderController - All orders Deleteds Sucess
+06-12-2022 11:26:11.764 | 72558 | [http-nio-8080-exec-9] | WARN  | c.order.controller.OrderController - Orders not found
+06-12-2022 11:26:15.130 | 75924 | [http-nio-8080-exec-10] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 11:26:15.130 | 75924 | [http-nio-8080-exec-10] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+06-12-2022 11:26:15.130 | 75924 | [http-nio-8080-exec-10] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 11:26:16.802 | 77596 | [http-nio-8080-exec-10] | INFO  | com.order.service.LoggerService - ********************* ORDER CREATE SUCESS DETAIL ****************************************
+06-12-2022 11:26:16.803 | 77597 | [http-nio-8080-exec-10] | INFO  | com.order.service.LoggerService - Order number: 2                                                   
+06-12-2022 11:26:16.805 | 77599 | [http-nio-8080-exec-10] | INFO  | com.order.service.LoggerService - Order Date: 6 de dez. de 2022 11:26:15                          
+06-12-2022 11:26:16.805 | 77599 | [http-nio-8080-exec-10] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+06-12-2022 11:26:16.806 | 77600 | [http-nio-8080-exec-10] | INFO  | com.order.service.LoggerService - Order Item: Keyboard                                         
+06-12-2022 11:26:16.806 | 77600 | [http-nio-8080-exec-10] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+06-12-2022 11:26:16.807 | 77601 | [http-nio-8080-exec-10] | INFO  | com.order.service.LoggerService - Order The amount: 1                                          
+06-12-2022 11:26:16.807 | 77601 | [http-nio-8080-exec-10] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 11:26:16.807 | 77601 | [http-nio-8080-exec-10] | INFO  | com.order.service.LoggerService - ********************* STOCK MOVEMENT DETAIL *******************************
+06-12-2022 11:26:16.808 | 77602 | [http-nio-8080-exec-10] | INFO  | com.order.service.LoggerService - Stock movement number: 2                                            
+06-12-2022 11:26:16.808 | 77602 | [http-nio-8080-exec-10] | INFO  | com.order.service.LoggerService - Stock movement Date: Tue Dec 06 11:26:15 WET 2022                                    
+06-12-2022 11:26:16.808 | 77602 | [http-nio-8080-exec-10] | INFO  | com.order.service.LoggerService - Stock movement Order Number: 2                                  
+06-12-2022 11:26:16.808 | 77602 | [http-nio-8080-exec-10] | INFO  | com.order.service.LoggerService - Stock movement Situation: SUCCESS_COMPLETED                                  
+06-12-2022 11:26:16.808 | 77602 | [http-nio-8080-exec-10] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 11:26:16.808 | 77602 | [http-nio-8080-exec-10] | INFO  | com.order.service.LoggerService - ********************* EMAIL SEND SUCESS ******************************************
+06-12-2022 11:26:16.808 | 77602 | [http-nio-8080-exec-10] | INFO  | com.order.service.LoggerService - Email: luismagnovaes@gmail.com                                            
+06-12-2022 11:26:16.808 | 77602 | [http-nio-8080-exec-10] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 11:26:30.998 | 91792 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:26:30.999 | 91793 | [http-nio-8080-exec-1] | ERROR | com.order.service.LoggerService - Error detail: Error of system Order org.springframework.dao.InvalidDataAccessApiUsageException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call                                                            
+06-12-2022 11:26:30.999 | 91793 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:26:31.007 | 91801 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:26:31.007 | 91801 | [http-nio-8080-exec-1] | ERROR | com.order.service.LoggerService - Error detail: There is a RegistStockMoviment associate!                                                            
+06-12-2022 11:26:31.007 | 91801 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:26:51.736 | 112530 | [http-nio-8080-exec-3] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:26:51.736 | 112530 | [http-nio-8080-exec-3] | ERROR | com.order.service.LoggerService - Error detail: Error of system Order org.springframework.dao.InvalidDataAccessApiUsageException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call                                                            
+06-12-2022 11:26:51.736 | 112530 | [http-nio-8080-exec-3] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:27:22.938 | 143732 | [http-nio-8080-exec-6] | INFO  | c.order.controller.OrderController - Orders found  sucess
+06-12-2022 11:27:40.998 | 161792 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:27:41.005 | 161799 | [http-nio-8080-exec-5] | ERROR | com.order.service.LoggerService - Error detail: Error of system Order org.springframework.dao.InvalidDataAccessApiUsageException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call                                                            
+06-12-2022 11:27:41.014 | 161808 | [http-nio-8080-exec-5] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:27:57.066 | 177860 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Starting OrderManagerApplication using Java 17.0.4.1 with PID 13107 (/home/luisnovaes/Área de Trabalho/springtoo/order-manager/target/classes started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+06-12-2022 11:27:57.066 | 177860 | [restartedMain] | INFO  | com.order.OrderManagerApplication - No active profile set, falling back to 1 default profile: "default"
+06-12-2022 11:27:58.266 | 179060 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Started OrderManagerApplication in 1.242 seconds (process running for 179.843)
+06-12-2022 11:27:58.270 | 179064 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 11:27:58.270 | 179064 | [restartedMain] | INFO  | com.order.OrderManagerApplication - ORDER MANAGER SYSTEM - LUIS MAGNO NOVAES - rel:1.0 - 12/2022
+06-12-2022 11:27:58.270 | 179064 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 11:28:02.894 | 183688 | [http-nio-8080-exec-2] | INFO  | c.order.controller.ItemController - Item create sucess
+06-12-2022 11:32:55.596 | 476390 | [http-nio-8080-exec-5] | INFO  | c.order.controller.UserController - User create sucess
+06-12-2022 11:33:07.776 | 488570 | [http-nio-8080-exec-6] | INFO  | c.o.c.StockMovementController - StockMovement create sucess
+06-12-2022 11:33:12.436 | 493230 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 11:33:12.437 | 493231 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+06-12-2022 11:33:12.437 | 493231 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 11:33:13.984 | 494778 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - ********************* ORDER CREATE SUCESS DETAIL ****************************************
+06-12-2022 11:33:13.985 | 494779 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Order number: 1                                                   
+06-12-2022 11:33:13.986 | 494780 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Order Date: 6 de dez. de 2022 11:33:12                          
+06-12-2022 11:33:13.986 | 494780 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+06-12-2022 11:33:13.987 | 494781 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Order Item: Keyboard                                         
+06-12-2022 11:33:13.987 | 494781 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+06-12-2022 11:33:13.987 | 494781 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Order The amount: 1                                          
+06-12-2022 11:33:13.987 | 494781 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 11:33:13.987 | 494781 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - ********************* STOCK MOVEMENT DETAIL *******************************
+06-12-2022 11:33:13.988 | 494782 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Stock movement number: 1                                            
+06-12-2022 11:33:13.988 | 494782 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Stock movement Date: Tue Dec 06 11:33:12 WET 2022                                    
+06-12-2022 11:33:13.988 | 494782 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Stock movement Order Number: 1                                  
+06-12-2022 11:33:13.988 | 494782 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Stock movement Situation: SUCCESS_COMPLETED                                  
+06-12-2022 11:33:13.988 | 494782 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 11:33:13.988 | 494782 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - ********************* EMAIL SEND SUCESS ******************************************
+06-12-2022 11:33:13.988 | 494782 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - Email: luismagnovaes@gmail.com                                            
+06-12-2022 11:33:13.989 | 494783 | [http-nio-8080-exec-7] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 11:33:24.290 | 505084 | [http-nio-8080-exec-10] | INFO  | c.order.controller.OrderController - Orders found  sucess
+06-12-2022 11:34:41.040 | 581834 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:34:41.058 | 581852 | [http-nio-8080-exec-8] | ERROR | com.order.service.LoggerService - Error detail: Error of system Order org.springframework.dao.InvalidDataAccessApiUsageException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call                                                            
+06-12-2022 11:34:41.066 | 581860 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:34:41.108 | 581902 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:34:41.108 | 581902 | [http-nio-8080-exec-8] | ERROR | com.order.service.LoggerService - Error detail: There is a RegistStockMoviment associate!                                                            
+06-12-2022 11:34:41.109 | 581903 | [http-nio-8080-exec-8] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:37:12.724 | 733518 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:37:12.724 | 733518 | [http-nio-8080-exec-1] | ERROR | com.order.service.LoggerService - Error detail: Error of system Order org.springframework.dao.InvalidDataAccessApiUsageException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call                                                            
+06-12-2022 11:37:12.724 | 733518 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:37:12.749 | 733543 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:37:12.751 | 733545 | [http-nio-8080-exec-1] | ERROR | com.order.service.LoggerService - Error detail: There is a RegistStockMoviment associate!                                                            
+06-12-2022 11:37:12.751 | 733545 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:37:34.595 | 822  | [restartedMain] | INFO  | com.order.OrderManagerApplication - Starting OrderManagerApplication using Java 17.0.4.1 with PID 13711 (/home/luisnovaes/Área de Trabalho/springtoo/order-manager/target/classes started by luisnovaes in /home/luisnovaes/Área de Trabalho/springtoo/order-manager)
+06-12-2022 11:37:34.598 | 825  | [restartedMain] | INFO  | com.order.OrderManagerApplication - No active profile set, falling back to 1 default profile: "default"
+06-12-2022 11:37:39.251 | 5478 | [restartedMain] | INFO  | com.order.OrderManagerApplication - Started OrderManagerApplication in 5.042 seconds (process running for 6.385)
+06-12-2022 11:37:39.255 | 5482 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 11:37:39.255 | 5482 | [restartedMain] | INFO  | com.order.OrderManagerApplication - ORDER MANAGER SYSTEM - LUIS MAGNO NOVAES - rel:1.0 - 12/2022
+06-12-2022 11:37:39.255 | 5482 | [restartedMain] | INFO  | com.order.OrderManagerApplication - *************************************************************
+06-12-2022 11:39:43.145 | 129372 | [http-nio-8080-exec-2] | WARN  | c.order.controller.OrderController - Orders not found
+06-12-2022 11:39:48.528 | 134755 | [http-nio-8080-exec-4] | INFO  | c.order.controller.ItemController - Item create sucess
+06-12-2022 11:39:52.575 | 138802 | [http-nio-8080-exec-3] | INFO  | c.order.controller.UserController - User create sucess
+06-12-2022 11:39:57.139 | 143366 | [http-nio-8080-exec-5] | INFO  | c.o.c.StockMovementController - StockMovement create sucess
+06-12-2022 11:40:58.867 | 205094 | [http-nio-8080-exec-8] | INFO  | c.o.c.StockMovementController - StockMovements found  sucess
+06-12-2022 11:41:04.209 | 210436 | [http-nio-8080-exec-10] | WARN  | c.order.controller.OrderController - Orders not found
+06-12-2022 11:41:07.587 | 213814 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 11:41:07.587 | 213814 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+06-12-2022 11:41:07.587 | 213814 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 11:41:09.953 | 216180 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - ********************* ORDER CREATE SUCESS DETAIL ****************************************
+06-12-2022 11:41:09.953 | 216180 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - Order number: 1                                                   
+06-12-2022 11:41:09.953 | 216180 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - Order Date: 6 de dez. de 2022 11:41:07                          
+06-12-2022 11:41:09.954 | 216181 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+06-12-2022 11:41:09.954 | 216181 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - Order Item: Keyboard                                         
+06-12-2022 11:41:09.954 | 216181 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+06-12-2022 11:41:09.954 | 216181 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - Order The amount: 1                                          
+06-12-2022 11:41:09.954 | 216181 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 11:41:09.954 | 216181 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - ********************* STOCK MOVEMENT DETAIL *******************************
+06-12-2022 11:41:09.954 | 216181 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - Stock movement number: 1                                            
+06-12-2022 11:41:09.954 | 216181 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - Stock movement Date: Tue Dec 06 11:41:07 WET 2022                                    
+06-12-2022 11:41:09.954 | 216181 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - Stock movement Order Number: 1                                  
+06-12-2022 11:41:09.954 | 216181 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - Stock movement Situation: SUCCESS_COMPLETED                                  
+06-12-2022 11:41:09.954 | 216181 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 11:41:09.955 | 216182 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - ********************* EMAIL SEND SUCESS ******************************************
+06-12-2022 11:41:09.955 | 216182 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - Email: luismagnovaes@gmail.com                                            
+06-12-2022 11:41:09.955 | 216182 | [http-nio-8080-exec-9] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 11:41:30.861 | 237088 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:41:30.862 | 237089 | [http-nio-8080-exec-1] | ERROR | com.order.service.LoggerService - Error detail: Error of system Order org.springframework.dao.InvalidDataAccessApiUsageException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call                                                            
+06-12-2022 11:41:30.862 | 237089 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:41:30.907 | 237134 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:41:30.908 | 237135 | [http-nio-8080-exec-1] | ERROR | com.order.service.LoggerService - Error detail: There is a RegistStockMoviment associate!                                                            
+06-12-2022 11:41:30.908 | 237135 | [http-nio-8080-exec-1] | INFO  | com.order.service.LoggerService - ***************************************************************************************
+06-12-2022 11:41:51.732 | 257959 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 11:41:51.732 | 257959 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService -            ORDER MANAGER SYSTEM - CREATE ORDER            
+06-12-2022 11:41:51.732 | 257959 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - *************************************************************
+06-12-2022 11:41:53.371 | 259598 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - ********************* ORDER CREATE SUCESS DETAIL ****************************************
+06-12-2022 11:41:53.373 | 259600 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - Order number: 2                                                   
+06-12-2022 11:41:53.373 | 259600 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - Order Date: 6 de dez. de 2022 11:41:51                          
+06-12-2022 11:41:53.374 | 259601 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+06-12-2022 11:41:53.374 | 259601 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - Order Item: Keyboard                                         
+06-12-2022 11:41:53.374 | 259601 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - Order User: Luis Novaes                                         
+06-12-2022 11:41:53.375 | 259602 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - Order The amount: 1                                          
+06-12-2022 11:41:53.375 | 259602 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 11:41:53.375 | 259602 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - ********************* STOCK MOVEMENT DETAIL *******************************
+06-12-2022 11:41:53.375 | 259602 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - Stock movement number: 2                                            
+06-12-2022 11:41:53.376 | 259603 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - Stock movement Date: Tue Dec 06 11:41:51 WET 2022                                    
+06-12-2022 11:41:53.376 | 259603 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - Stock movement Order Number: 2                                  
+06-12-2022 11:41:53.376 | 259603 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - Stock movement Situation: SUCCESS_COMPLETED                                  
+06-12-2022 11:41:53.376 | 259603 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 11:41:53.376 | 259603 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - ********************* EMAIL SEND SUCESS ******************************************
+06-12-2022 11:41:53.376 | 259603 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - Email: luismagnovaes@gmail.com                                            
+06-12-2022 11:41:53.377 | 259604 | [http-nio-8080-exec-4] | INFO  | com.order.service.LoggerService - ***************************************************************************
+06-12-2022 11:42:55.944 | 322171 | [http-nio-8080-exec-3] | INFO  | com.order.service.LoggerService - ********************* SYSTEM ERROR *************** ***********************************
+06-12-2022 11:42:55.969 | 322196 | [http-nio-8080-exec-3] | ERROR | com.order.service.LoggerService - Error detail: Error of system Order org.springframework.dao.InvalidDataAccessApiUsageException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call                                                            
+06-12-2022 11:42:55.980 | 322207 | [http-nio-8080-exec-3] | INFO  | com.order.service.LoggerService - ***************************************************************************************
