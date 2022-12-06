@@ -54,13 +54,13 @@ public class StockMovementController {
 				stockMovementRepository.findByItemContaining(stockMovement).forEach(stockMovements::add);
 
 			if (stockMovements.isEmpty()) {
-				loggerService.printErros("StockMovements not find");
+				loggerService.printErros("StockMovements not found");
 				return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 			}
-			LOGGER.info("StockMovements find  sucess");
+			LOGGER.info("StockMovements found  sucess");
 			return new ResponseEntity<>(stockMovements, HttpStatus.OK);
 		} catch (Exception e) {
-			loggerService.printErros("Error system" + e);
+			loggerService.printErros("Error system " + e);
 			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
@@ -70,7 +70,7 @@ public class StockMovementController {
 		try {	Optional<StockMovement> StockMovementData = stockMovementRepository.findById(id);
 
 		if (StockMovementData.isPresent()) {
-			LOGGER.info("StockMovemen find  sucess");
+			LOGGER.info("StockMovemen found  sucess");
 			return new ResponseEntity<>(StockMovementData.get(), HttpStatus.OK);
 		} else {
 			loggerService.printErros("StockMovemen Not found");
@@ -78,7 +78,7 @@ public class StockMovementController {
 		}
 			
 		} catch (Exception e) {
-			loggerService.printErros("Error system" + e);
+			loggerService.printErros("Error system " + e);
 		}
 		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 	}
@@ -95,7 +95,7 @@ public class StockMovementController {
 			return new ResponseEntity<>(_stockMovement, HttpStatus.CREATED);
 			
 		} catch (Exception e) {
-			loggerService.printErros("Error system stockMovement" + e);
+			loggerService.printErros("Error system stockMovement " + e);
 			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
@@ -117,7 +117,7 @@ public class StockMovementController {
 				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 			}
 		} catch (Exception e) {
-			loggerService.printErros("Error system stockMovement" + e);
+			loggerService.printErros("Error system stockMovement " + e);
 		}
 		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 	}
@@ -138,7 +138,7 @@ public class StockMovementController {
 	public ResponseEntity<HttpStatus> deleteAllStockMovements() {
 		try {
 			stockMovementRepository.deleteAll();
-			LOGGER.info("All stockMovement Deleteds Sucess");
+			LOGGER.info("All stockMovement Deleteds Sucess ");
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		} catch (Exception e) {
 			loggerService.printErros("Error system stockMovement" + e);

@@ -72,13 +72,13 @@ public class OrderController {
 				orderRepository.findByUser(order).forEach(orders::add);
 
 			if (orders.isEmpty()) {
-				LOGGER.warn("Orders not find");
+				LOGGER.warn("Orders not found");
 				return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 			}
-			LOGGER.info("Order find  sucess");
+			LOGGER.info("Orders found  sucess");
 			return new ResponseEntity<>(orders, HttpStatus.OK);
 		} catch (Exception e) {
-			loggerService.printErros("Error system" + e);
+			loggerService.printErros("Error system " + e);
 			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
@@ -97,7 +97,7 @@ public class OrderController {
 				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 			}
 		} catch (Exception e) {
-			loggerService.printErros("Error system order" + e);
+			loggerService.printErros("Error system order " + e);
 		}
 		LOGGER.error("Error intput data!");
 		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
@@ -123,7 +123,7 @@ public class OrderController {
 			loggerService.detailOrder(request, orderDto, idMovement, sendEmail);
 			return new ResponseEntity<>(_order, HttpStatus.CREATED);
 		} catch (Exception e) {
-			loggerService.printErros("Error system Order" + e);
+			loggerService.printErros("Error system Order " + e);
 			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
@@ -150,7 +150,7 @@ public class OrderController {
 				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 			}
 		} catch (Exception e) {
-			loggerService.printErros("Error system Order" + e);
+			loggerService.printErros("Error system Order " + e);
 		}
 		return null;	
 	}
@@ -158,26 +158,41 @@ public class OrderController {
 	@DeleteMapping("/order/{id}")
 	public ResponseEntity<HttpStatus> deleteOrder(@PathVariable("id") long id) {
 		try {
+			deleteRegistroMovement(id);
 			orderRepository.deleteById(id);
 			LOGGER.info("Order ID " + id + " Deleted Order Sucess");
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		} catch (Exception e) {
-			loggerService.printErros("Error system Order" + e);
+			loggerService.printErros("Error system Order " + e);
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
 
-	@DeleteMapping("/order")
+	@DeleteMapping("/orders")
 	public ResponseEntity<HttpStatus> deleteAllOrders() {
 		try {
+			registroMovementRepository.deleteAll();
 			orderRepository.deleteAll();
 			LOGGER.info("All orders Deleteds Sucess");
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		} catch (Exception e) {
-			loggerService.printErros("Error of system Order" + e);
+			loggerService.printErros("Error of system Order " + e);
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 
+	}
+	
+	@DeleteMapping("/RegStockMov")
+	private ResponseEntity<HttpStatus> deleteRegistroMovement(long id) {
+		try {
+			Optional<Order> OrderData = orderRepository.findById(id);
+			registroMovementRepository.deleteByOrderId(OrderData.get());
+			LOGGER.info("RegStockMov Deleted whith Sucess");
+			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+		} catch (Exception e) {
+			loggerService.printErros("Error of system Order " + e);
+			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+		}
 	}
 
 

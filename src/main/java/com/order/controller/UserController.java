@@ -45,10 +45,10 @@ public class UserController {
 				userRepository.findByNameContaining(user).forEach(users::add);
 
 			if (users.isEmpty()) {
-				loggerService.printErros("Users not find");
+				loggerService.printErros("Users not found");
 				return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 			}
-			LOGGER.info("User find  sucess");
+			LOGGER.info("User found  sucess");
 			return new ResponseEntity<>(users, HttpStatus.OK);
 		} catch (Exception e) {
 			loggerService.printErros("Error system user " + e);
@@ -62,7 +62,7 @@ public class UserController {
 			Optional<User> userData = userRepository.findById(id);
 
 			if (userData.isPresent()) {
-				LOGGER.info("User find  sucess");
+				LOGGER.info("User found  sucess");
 				return new ResponseEntity<>(userData.get(), HttpStatus.OK);
 			} else {
 				loggerService.printErros("User not found");
@@ -79,10 +79,10 @@ public class UserController {
 		try {
 			User _user = userRepository
 					.save(new User(user.getName(), user.getEmail()));
-			LOGGER.info("Order user sucess");
+			LOGGER.info("User create sucess");
 			return new ResponseEntity<>(_user, HttpStatus.CREATED);
 		} catch (Exception e) {
-			loggerService.printErros("Error system user" + e);
+			loggerService.printErros("Error system user " + e);
 			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
@@ -102,7 +102,7 @@ public class UserController {
 				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 			}
 		} catch (Exception e) {
-			loggerService.printErros("Error system user" + e);
+			loggerService.printErros("Error system user " + e);
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
 	}
@@ -111,10 +111,10 @@ public class UserController {
 	public ResponseEntity<HttpStatus> deleteUser(@PathVariable("id") long id) {
 		try {
 			userRepository.deleteById(id);
-			LOGGER.info("Order ID " + id + " Deleted user Sucess");
+			LOGGER.info("user ID " + id + " Deleted user Sucess");
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		} catch (Exception e) {
-			loggerService.printErros("Error system user" + e);
+			loggerService.printErros("Error system user " + e);
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
@@ -126,7 +126,7 @@ public class UserController {
 			LOGGER.info("All user Deleteds Sucess");
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		} catch (Exception e) {
-			loggerService.printErros("Error system users" + e);
+			loggerService.printErros("Error system users " + e);
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 

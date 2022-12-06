@@ -45,13 +45,13 @@ public class ItemController {
 				itemRepository.findByNameContaining(item).forEach(Items::add);
 
 			if (Items.isEmpty()) {
-				loggerService.printErros("Item not find");
+				loggerService.printErros("Item not found");
 				return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 			}
-			LOGGER.info("Items find  sucess");
+			LOGGER.info("Items found  sucess");
 			return new ResponseEntity<>(Items, HttpStatus.OK);
 		} catch (Exception e) {
-			loggerService.printErros("Error system" + e);
+			loggerService.printErros("Error system " + e);
 			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
@@ -62,14 +62,14 @@ public class ItemController {
 			Optional<Item> ItemData = itemRepository.findById(id);
 
 			if (ItemData.isPresent()) {
-				LOGGER.info("Item find  sucess");
+				LOGGER.info("Item found  sucess");
 				return new ResponseEntity<>(ItemData.get(), HttpStatus.OK);
 			} else {
-				loggerService.printErros("Item not find");
+				loggerService.printErros("Item not found");
 				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 			}
 		} catch (Exception e) {
-			loggerService.printErros("Error system" + e);
+			loggerService.printErros("Error system " + e);
 		}
 		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 	}
@@ -79,11 +79,11 @@ public class ItemController {
 		try {
 			Item _Item = itemRepository
 					.save(new Item(item.getName()));
-			LOGGER.info("Order create sucess");
+			LOGGER.info("Item create sucess");
 			return new ResponseEntity<>(_Item, HttpStatus.CREATED);
 		} catch (Exception e) {
 			loggerService.printErros("Erro in processo operation: CREATE_ITEM");
-			loggerService.printErros("Error system Item" + e);
+			loggerService.printErros("Error system Item " + e);
 			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
@@ -102,7 +102,7 @@ public class ItemController {
 				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 			}
 		} catch (Exception e) {
-			loggerService.printErros("Error system" + e);
+			loggerService.printErros("Error system " + e);
 		}
 		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 	}
@@ -111,7 +111,7 @@ public class ItemController {
 	public ResponseEntity<HttpStatus> deleteItem(@PathVariable("id") long id) {
 		try {
 			itemRepository.deleteById(id);
-			LOGGER.info("Order ID " + id + " Deleted Sucess");
+			LOGGER.info("Item ID " + id + " Deleted Sucess");
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		} catch (Exception e) {
 			loggerService.printErros("Error system" + e);
@@ -123,7 +123,7 @@ public class ItemController {
 	public ResponseEntity<HttpStatus> deleteAllItems() {
 		try {
 			itemRepository.deleteAll();
-			LOGGER.info("All orders Deleteds Sucess");
+			LOGGER.info("All items Deleteds Sucess ");
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		} catch (Exception e) {
 			loggerService.printErros("Error system" + e);
