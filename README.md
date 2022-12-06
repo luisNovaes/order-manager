@@ -33,9 +33,9 @@
 *   - Save
 
 ####  Setep 3 - Run the Project. 
-*           Import project for IDE, run maven clean, run maven instal and Spring boot APP. 
+*           Import project to IDE, run maven clean, run maven instal and Spring boot APP. 
 ####  Setep 3 - Tests.
-  * - There is a file in /order-manager/Postiman/order-manager.postman_collection.json whith collections for Postiman .
+  * - There is a file in /order-manager/Postiman/order-manager.postman_collection.json whith collections to Postman .
 
 * 				GET: "http://localhost:8080/api/item/items				
 					GET: "http://localhost:8080/api/item/items/{id}			
