@@ -32,3 +32,6 @@
              INSERT INTO public.stock_movements (id, creation_date, quantity, item_id) VALUES (3, TIMESTAMP WITH TIME ZONE '2004-10-19 10:23:54+02', 10, 3);
            - INSERT INTO public.stock_movements (id, creation_date, quantity, item_id) VALUES (4, TIMESTAMP WITH TIME ZONE '2004-10-19 10:23:54+02', 10, 4);
            - INSERT INTO public.stock_movements (id, creation_date, quantity, item_id) VALUES (5, TIMESTAMP WITH TIME ZONE '2004-10-19 10:23:54+02', 10, 5);
+
+### Option 2 -  Using maven
+   
