@@ -1,4 +1,6 @@
-## Setup order-manager
+## Setup order-manager version 0.0.1-SNAPSHOT 
+### This project is a order manager API.
+##### Java version: 1.8,  Spring-boot version: 3.0.0, Spring-boot-mail,  Maven version: 3.0.6,  PostgresSQL-12,  PgAdmin-4,  REST API, Slf4j, Docker. 
 
 ####  Setep 1 - Clone the project.
 *           $ git init
