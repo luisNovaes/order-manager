@@ -1,44 +1,27 @@
-version: '3.1'
+version: '2'
 services:
-  postgres:
-    image: postgres:10.0
-    hostname: postgres
-    container_name: postgres
-    healthcheck:
-      test: ["CMD-SHELL,  -U root"]
-      interval: 30s
-      timeout: 30s
-      retries: 3
-    env_file:
-      - prosody.env
-    volumes:
-      - ${PWD}/postgres/data/:/var/lib/postgresql/data/
-    restart: always
-  
-  pgadmin:
-    container_name: pgadmin4_container
-    image: dpage/pgadmin4
-    restart: always
-    environment:
-      PGADMIN_DEFAULT_EMAIL: admin@admin.com
-      PGADMIN_DEFAULT_PASSWORD: root
-    ports:    
+    web:
+      build: .
+      ports: 
+          - 8080:8080
+      depends_on:
+          - db
+    db:
+      container_name: pg_container
+      image: postgres
+      restart: always
+      environment:
+        POSTGRES_USER: root
+        POSTGRES_PASSWORD: root
+        POSTGRES_DB: test_db
+      ports:
+        - "5432:5432"
+    pgadmin:
+      container_name: pgadmin4_container
+      image: dpage/pgadmin4
+      restart: always
+      environment:
+        PGADMIN_DEFAULT_EMAIL: admin@admin.com
+        PGADMIN_DEFAULT_PASSWORD: root
+      ports:
         - "5050:80"
-  app:
-    container_name: order-manager
-    image: order-manager
-    networks:
-      - order-pgsql
-    build: ./
-    ports:
-      - "8080:8080"
-    depends_on:
-      - dbpostgresql
-    environment:
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://dbpostgresql:5432/test_db
-      - SPRING_DATASOURCE_USERNAME=root
-      - SPRING_DATASOURCE_PASSWORD=root
-      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
-
-networks:
-  order-pgsql:
