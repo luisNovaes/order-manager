@@ -3,7 +3,6 @@
 ####  Setep 1 - Clone the project.
 *           $ git init
 *           $ git clone https://github.com/luisNovaes/order-manager.git
-*           $ mvn clean instal 
 
 ####  Setep 2 - Build and run image postgresDB whith pgadmin 
 * - Enter the root directory of the application and run the command below, (where is the docker-compose.yml file).
@@ -32,7 +31,7 @@
 *   - Save
 
 ####  Setep 3 - Run the Project. 
-
+*           $ mvn clean instal 
 ####  Setep 3 - Tests.
   * - There is a file in /order-manager/Postiman/order-manager.postman_collection.json whith collections for Postiman .
 
