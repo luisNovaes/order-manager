@@ -20,7 +20,7 @@
 * - Select registe/server in the pgadmin
 *   - General / Name: test_db
 
-##### Get IP address of container postgres
+##### Get IP HOST address of container postgres
 *           $ docker ps
 *   - copy the CONTAINER ID of postgres container and input in below command.
 *           $ docker inspect <CONTAINER ID> | grep IPAddress
