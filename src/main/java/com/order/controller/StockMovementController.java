@@ -122,7 +122,7 @@ public class StockMovementController {
 		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 	}
 
-	@DeleteMapping("/stockMovement/{id}")
+	@DeleteMapping("/stockMovements/{id}")
 	public ResponseEntity<HttpStatus> deleteStockMovement(@PathVariable("id") long id) {
 		try {
 			stockMovementRepository.deleteById(id);
